@@ -2103,6 +2103,145 @@ td {
 }
 
 /* ==========================================================================
+   SLIDES 5 E 9 - LAYOUT 2 COLUNAS COM IMAGENS (FIGURAS PDF)
+   ========================================================================== */
+
+/* Slide 5 - Remodelação Óssea (2 colunas: texto | imagem) */
+[data-slide="5"] .content-2col-split > div:first-child {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: clamp(6px, 1.2vh, 10px) !important;
+  justify-content: space-between;
+}
+
+[data-slide="5"] .content-grid-3col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: clamp(5px, 1vh, 8px) !important;
+  grid-template-columns: unset !important;
+  grid-template-rows: unset !important;
+  flex: 0 0 auto !important;
+  min-height: auto !important;
+}
+
+[data-slide="5"] .concept-box {
+  padding: clamp(8px, 1.4vh, 12px) !important;
+  flex-shrink: 0;
+}
+
+[data-slide="5"] .concept-box h3 {
+  font-size: clamp(1.1rem, 1.7vh, 1.2rem) !important;
+  margin-bottom: clamp(3px, 0.6vh, 5px) !important;
+}
+
+[data-slide="5"] .concept-box p {
+  font-size: clamp(0.9rem, 1.45vh, 0.98rem) !important;
+  margin: 0 !important;
+}
+
+[data-slide="5"] .function-card {
+  padding: clamp(7px, 1.3vh, 10px) !important;
+  flex-shrink: 0;
+}
+
+[data-slide="5"] .function-card h4 {
+  font-size: clamp(0.95rem, 1.5vh, 1.05rem) !important;
+  margin-bottom: clamp(3px, 0.6vh, 5px) !important;
+}
+
+[data-slide="5"] .function-card p {
+  font-size: clamp(0.82rem, 1.35vh, 0.9rem) !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+[data-slide="5"] .balance-concept {
+  padding: clamp(8px, 1.4vh, 12px) !important;
+  flex-shrink: 0;
+}
+
+[data-slide="5"] .balance-concept h3 {
+  font-size: clamp(1.05rem, 1.65vh, 1.15rem) !important;
+  margin-bottom: clamp(3px, 0.6vh, 5px) !important;
+}
+
+[data-slide="5"] .balance-concept p {
+  font-size: clamp(0.88rem, 1.42vh, 0.95rem) !important;
+  margin: 0 !important;
+}
+
+[data-slide="5"] .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+[data-slide="5"] .slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Slide 9 - Mecanismo Axolote (2 colunas: sequência | imagem) */
+[data-slide="9"] .mechanism-sequence {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: clamp(5px, 1vh, 8px) !important;
+  align-items: center;
+}
+
+[data-slide="9"] .mech-step {
+  width: 100%;
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  border-radius: 8px;
+  padding: clamp(6px, 1.2vh, 9px) !important;
+  flex-shrink: 0;
+}
+
+[data-slide="9"] .mech-step h4 {
+  font-size: clamp(0.92rem, 1.48vh, 1rem) !important;
+  margin-bottom: clamp(2px, 0.5vh, 4px) !important;
+  line-height: 1.2 !important;
+}
+
+[data-slide="9"] .mech-step p {
+  font-size: clamp(0.78rem, 1.3vh, 0.85rem) !important;
+  margin: 0 !important;
+  line-height: 1.25 !important;
+}
+
+[data-slide="9"] .mech-arrow {
+  font-size: clamp(1.2rem, 2.2vh, 1.5rem) !important;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+[data-slide="9"] .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+[data-slide="9"] .slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ==========================================================================
    RESPONSIVIDADE
    ========================================================================== */
 
