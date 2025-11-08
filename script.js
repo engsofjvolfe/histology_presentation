@@ -1,18 +1,18 @@
 /**
- * NAVEGA«√O DE SLIDES - APRESENTA«√O REGENERA«√O E REMODELA«√O ”SSEA
- * NavegaÁ„o por teclado (setas, espaÁo, Page Up/Down)
+ * NAVEGA√á√ÉO DE SLIDES - APRESENTA√á√ÉO REGENERA√á√ÉO E REMODELA√á√ÉO √ìSSEA
+ * Navega√ß√£o por teclado (setas, espa√ßo, Page Up/Down)
  * Total: 26 slides
  */
 
 (function() {
   'use strict';
 
-  // Estado da apresentaÁ„o
+  // Estado da apresenta√ß√£o
   let currentSlideIndex = 0;
   const totalSlides = 26;
   const slides = [];
 
-  // InicializaÁ„o
+  // Inicializa√ß√£o
   function init() {
     // Coletar todos os slides
     for (let i = 1; i <= totalSlides; i++) {
@@ -33,12 +33,12 @@
     // Adicionar event listeners
     document.addEventListener('keydown', handleKeyPress);
 
-    console.log(`ApresentaÁ„o inicializada: ${slides.length} slides`);
+    console.log(`Apresenta√ß√£o inicializada: ${slides.length} slides`);
   }
 
-  // Mostrar slide especÌfico
+  // Mostrar slide espec√≠fico
   function showSlide(index) {
-    // Validar Ìndice
+    // Validar √≠ndice
     if (index < 0 || index >= slides.length) {
       return;
     }
@@ -51,14 +51,14 @@
     // Adicionar classe active ao slide atual
     slides[index].classList.add('active');
 
-    // Atualizar Ìndice atual
+    // Atualizar √≠ndice atual
     currentSlideIndex = index;
 
     // Log para debug
     console.log(`Slide ${index + 1}/${totalSlides}`);
   }
 
-  // PrÛximo slide
+  // Pr√≥ximo slide
   function nextSlide() {
     if (currentSlideIndex < slides.length - 1) {
       showSlide(currentSlideIndex + 1);
@@ -77,7 +77,7 @@
     showSlide(0);
   }
 
-  // ⁄ltimo slide
+  // √öltimo slide
   function lastSlide() {
     showSlide(slides.length - 1);
   }
@@ -85,7 +85,7 @@
   // Manipulador de eventos de teclado
   function handleKeyPress(event) {
     switch(event.key) {
-      // PrÛximo slide
+      // Pr√≥ximo slide
       case 'ArrowRight':
       case 'ArrowDown':
       case 'PageDown':
@@ -109,13 +109,13 @@
         firstSlide();
         break;
 
-      // ⁄ltimo slide
+      // √öltimo slide
       case 'End':
         event.preventDefault();
         lastSlide();
         break;
 
-      // Ir para slide especÌfico (1-9)
+      // Ir para slide espec√≠fico (1-9)
       case '1':
       case '2':
       case '3':
@@ -132,7 +132,7 @@
         }
         break;
 
-      // ESC para sair do modo fullscreen (se aplic·vel)
+      // ESC para sair do modo fullscreen (se aplic√°vel)
       case 'Escape':
         if (document.fullscreenElement) {
           document.exitFullscreen();
@@ -168,7 +168,7 @@
     init();
   }
 
-  // Expor funÁıes globalmente (opcional, para debug no console)
+  // Expor fun√ß√µes globalmente (opcional, para debug no console)
   window.slideNav = {
     next: nextSlide,
     prev: prevSlide,
