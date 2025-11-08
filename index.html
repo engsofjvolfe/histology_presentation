@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Regeneração e Remodelação Óssea — Seminário (25 slides)</title>
+    <title>Regeneração e Remodelação Óssea — Seminário (26 slides)</title>
     <meta
       name="description"
-      content="Apresentação (25 slides) baseada em Mehreen et al., Biology (2025). HTML pronto para CSS Material Design externo e JS de navegação."
+      content="Apresentação (26 slides) baseada em Mehreen et al., Biology (2025). HTML pronto para CSS Material Design externo e JS de navegação."
     />
-    <!-- Adicione seu styles.css externo aqui -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -18,1092 +17,1217 @@
       role="application"
       aria-label="Apresentação - Regeneração e Remodelação Óssea"
     >
-      <!-- Controls (JS will handle enabling/disabling) -->
-      <header class="presentation-header" role="banner">
-        <nav
-          class="presentation-controls"
-          aria-label="Controles da apresentação"
-        >
-          <button id="prevBtn" class="ctrl" aria-label="Anterior" disabled>
-            Anterior
-          </button>
-          <div class="slide-counter" aria-live="polite">
-            <span id="currentSlide">1</span> / <span id="totalSlides">25</span>
-          </div>
-          <button id="nextBtn" class="ctrl" aria-label="Próximo">
-            Próximo
-          </button>
-        </nav>
-      </header>
-
-      <!-- Slides container -->
       <main
         id="slides"
         class="slides"
         role="main"
-        data-total="25"
+        data-total="26"
         aria-live="polite"
       >
-        <!-- Slide 1 -->
+        <!-- Slide 1 — Capa Principal -->
         <section
           id="slide-1"
-          class="slide active"
+          class="slide active cover-page"
           data-slide="1"
           data-presenter="00"
-          data-pdf-page="1"
-          aria-label="Slide 1 — Capa"
+          aria-label="Slide 1 — Capa Principal"
         >
-          <header class="slide__header">
-            <h1 class="slide__title">
-              Conectando Remodelação e Regeneração Óssea
-            </h1>
-            <p class="slide__subtitle">
-              Desvendando Hormônios e Vias de Sinalização
-            </p>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>
-                  Revisão integrativa sobre hormônios e vias que conectam
-                  regeneração e remodelação óssea.
-                </li>
-                <li>
-                  Enfoque: Wnt/β-catenina, BMP, TGF-β; hormônios: PTH,
-                  calcitonina, FGF23, IGF/GH.
-                </li>
-                <li>
-                  Implicações translacionais: abordagem localizada e
-                  temporizada.
-                </li>
-              </ul>
-
-              <figure class="image-placeholder" aria-hidden="true">
-                [Capa — inserir imagem representativa de regeneração óssea]
-              </figure>
+          <div class="cover-container">
+            <div class="main-title-block">
+              <h1 class="main-title">
+                Conectando Remodelação e Regeneração Óssea
+              </h1>
+              <p class="main-subtitle">
+                Desvendando Hormônios e Vias de Sinalização
+              </p>
             </div>
-            <footer class="slide__footer">Presenter 00 | p.1</footer>
-          </article>
+            <div class="reference-block">
+              <p>
+                Revisão integrativa baseada em Mehreen et al., Biology (2025)
+              </p>
+            </div>
+            <div class="footer-block">
+              <span>Seminário de Histologia</span>
+            </div>
+          </div>
         </section>
 
-        <!-- Slide 2 -->
+        <!-- Slide 2 — Apresentadores -->
         <section
           id="slide-2"
-          class="slide"
+          class="slide presenters-page"
           data-slide="2"
           data-presenter="00"
-          data-pdf-page="1-2"
-          aria-label="Slide 2 — Equipe"
+          aria-label="Slide 2 — Apresentadores e Instituição"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">Equipe de Apresentação</h2>
-            <p class="slide__subtitle">Funções e fluxo</p>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>Apresentador 01 — Introdução e Desafios</li>
-                <li>Apresentador 02 — Organismos Modelo</li>
-                <li>Apresentador 03 — Fases da Regeneração</li>
-                <li>Apresentador 04 — Remodelação & PTH</li>
-                <li>Apresentador 05 — Calcitonina & FGF23</li>
-                <li>Apresentador 06 — IGF/GH e Conclusões</li>
-              </ul>
+          <div class="presenters-container">
+            <h2 class="page-title">Apresentadores</h2>
 
-              <div class="institution-info">
-                <p class="small">
-                  <strong>Instituição:</strong> [Nome da Instituição]
-                </p>
-                <p class="small">
-                  <strong>Curso/Disciplina:</strong> Histologia
-                </p>
-                <p class="small">
-                  <strong>Orientador(a):</strong> [Nome do Prof(a)]
-                </p>
+            <div class="institution-details">
+              <div class="institution-item">
+                <strong>Instituição:</strong> [Nome da Universidade/Faculdade]
+              </div>
+              <div class="institution-item">
+                <strong>Curso:</strong> [Nome do Curso]
+              </div>
+              <div class="institution-item">
+                <strong>Disciplina:</strong> Histologia
+              </div>
+              <div class="institution-item">
+                <strong>Professor(a):</strong> [Nome do Professor(a)]
               </div>
             </div>
-            <footer class="slide__footer">Presenter 00 | p.1-2</footer>
-          </article>
+
+            <div class="team-section">
+              <h3>Equipe:</h3>
+              <div class="team-list">
+                <div class="team-member">
+                  <strong>Apresentador 01</strong> — [Nome]
+                </div>
+                <div class="team-member">
+                  <strong>Apresentador 02</strong> — [Nome]
+                </div>
+                <div class="team-member">
+                  <strong>Apresentador 03</strong> — [Nome]
+                </div>
+                <div class="team-member">
+                  <strong>Apresentador 04</strong> — [Nome]
+                </div>
+                <div class="team-member">
+                  <strong>Apresentador 05</strong> — [Nome]
+                </div>
+                <div class="team-member">
+                  <strong>Apresentador 06</strong> — [Nome]
+                </div>
+              </div>
+            </div>
+
+            <div class="slide-footer">
+              Seminário de Histologia | Novembro 2025
+            </div>
+          </div>
         </section>
 
-        <!-- Slide 3 -->
+        <!-- Slide 3 — Índice -->
         <section
           id="slide-3"
-          class="slide"
+          class="slide index-page"
           data-slide="3"
-          data-presenter="01"
-          data-pdf-page="1-2"
-          aria-label="Slide 3 — Introdução: Importância Clínica"
+          data-presenter="00"
+          aria-label="Slide 3 — Índice da Apresentação"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">Introdução — Importância Clínica</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Problema Global</h3>
-                <ul class="bullets">
-                  <li>
-                    Milhões afetados por doenças ósseas e traumas esqueléticos.
-                  </li>
-                  <li>
-                    Defeitos críticos (>2 cm) tipicamente não regeneram
-                    espontaneamente.
-                  </li>
-                  <li>
-                    Cicatrização insuficiente → perda funcional e custos
-                    elevados.
-                  </li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3>Soluções Emergentes</h3>
-                <ul class="bullets">
-                  <li>
-                    Engenharia de tecidos e terapias celulares — promessas e
-                    limitações.
-                  </li>
-                  <li>
-                    Modulação hormonal e vias de sinalização como complemento.
-                  </li>
-                  <li>
-                    Biomateriais com liberação controlada (local/pulsátil) para
-                    reduzir efeitos sistêmicos.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <footer class="slide__footer">Presenter 01 | p.1-2</footer>
-          </article>
-        </section>
+          <div class="index-container">
+            <h2 class="index-title">Sumário</h2>
 
-        <!-- Slide 4 -->
-        <section
-          id="slide-4"
-          class="slide"
-          data-slide="4"
-          data-presenter="01"
-          data-pdf-page="2"
-          aria-label="Slide 4 — Objetivos e Abordagem"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Objetivos e Abordagem</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>
-                  Objetivo: conectar mecanismos de regeneração (modelos) com
-                  remodelação (humanos) via regulação hormonal.
+            <div class="index-content">
+              <ol class="index-list">
+                <li class="index-item">
+                  <span class="index-topic"
+                    ><strong>Introdução</strong> — Importância clínica e
+                    objetivos</span
+                  >
+                  <span class="index-slides">(Slides 4-6)</span>
                 </li>
-                <li>Foco em sinais decisórios: Wnt/β-catenina, BMP, TGF-β.</li>
-                <li>
-                  Avaliar riscos e benefícios de manipulação hormonal
-                  translacional.
+                <li class="index-item">
+                  <span class="index-topic"
+                    ><strong>Organismos Modelo</strong> — Axolote, Zebrafish e
+                    Xenopus</span
+                  >
+                  <span class="index-slides">(Slides 7-10)</span>
                 </li>
-                <li>
-                  Propor direções: biomateriais + liberação temporizada e
-                  localizada.
+                <li class="index-item">
+                  <span class="index-topic"
+                    ><strong>Fases da Regeneração</strong> — Hemostasia,
+                    blastema e proliferação</span
+                  >
+                  <span class="index-slides">(Slides 11-14)</span>
                 </li>
-              </ul>
-
-              <figure class="image-placeholder" aria-hidden="true">
-                [Fluxograma objetivo → aplicação clínica]
-              </figure>
-            </div>
-            <footer class="slide__footer">Presenter 01 | p.2</footer>
-          </article>
-        </section>
-
-        <!-- Slide 5 -->
-        <section
-          id="slide-5"
-          class="slide"
-          data-slide="5"
-          data-presenter="01"
-          data-pdf-page="2-3"
-          aria-label="Slide 5 — Desafios Translacionais"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Desafios Translacionais</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Riscos Terapêuticos</h3>
-                <ul class="bullets">
-                  <li>Proliferação descontrolada e crescimento anormal.</li>
-                  <li>Desequilíbrios metabólicos e efeitos off-target.</li>
-                  <li>Potencial oncogênico em manipulações prolongadas.</li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3>Complexidade e Precisão</h3>
-                <ul class="bullets">
-                  <li>
-                    Crosstalk entre Wnt, BMP e TGF-β — redes interdependentes.
-                  </li>
-                  <li>
-                    Gap evolutivo: extrapolar de anfíbios para mamíferos exige
-                    cautela.
-                  </li>
-                  <li>
-                    Necessidade de entrega localizada e temporização (pulsátil
-                    vs contínuo).
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <footer class="slide__footer">Presenter 01 | p.2-3</footer>
-          </article>
-        </section>
-
-        <!-- Slide 6 -->
-        <section
-          id="slide-6"
-          class="slide"
-          data-slide="6"
-          data-presenter="02"
-          data-pdf-page="3-4"
-          aria-label="Slide 6 — Organismos Modelo: Axolote & Zebrafish"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">
-              Organismos Modelo — Axolote & Zebrafish
-            </h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Axolote (Ambystoma mexicanum)</h3>
-                <ul class="bullets">
-                  <li>
-                    Regeneração completa de membros, medula, coração e partes do
-                    cérebro sem cicatrizes.
-                  </li>
-                  <li>
-                    Blastema verdadeiro formado por desdiferenciação local.
-                  </li>
-                  <li>
-                    T3/T4 baixos mantêm capacidade regenerativa; manipulações
-                    hormonais alteram dinâmica.
-                  </li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3>Zebrafish (Danio rerio)</h3>
-                <ul class="bullets">
-                  <li>
-                    Transparência embrionária e alta manipulabilidade genética.
-                  </li>
-                  <li>
-                    Nadadeiras regenerativas como modelo análogo à ossificação.
-                  </li>
-                  <li>
-                    PTHrP → PTH1R/PTH3R influencia diferenciação osteoblástica
-                    em modelos aquáticos.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <footer class="slide__footer">Presenter 02 | p.3-4</footer>
-          </article>
-        </section>
-
-        <!-- Slide 7 -->
-        <section
-          id="slide-7"
-          class="slide"
-          data-slide="7"
-          data-presenter="02"
-          data-pdf-page="4-5"
-          aria-label="Slide 7 — Xenopus e Comparações"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Xenopus & Análise Comparativa</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Xenopus laevis</h3>
-                <ul class="bullets">
-                  <li>
-                    Girinos regeneram membros; adultos perdem progressivamente
-                    essa habilidade.
-                  </li>
-                  <li>
-                    Pico de T3 durante metamorfose correlaciona com perda
-                    regenerativa.
-                  </li>
-                  <li>
-                    Modelo útil para estudar perda ontogenética da regeneração.
-                  </li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3>Comparativo Rápido</h3>
-                <ul class="bullets">
-                  <li>Axolote: regeneração ilimitada (neotenia).</li>
-                  <li>Zebrafish: modelo genético e observação dinâmica.</li>
-                  <li>Xenopus: mostra transição da capacidade regenerativa.</li>
-                  <li>
-                    Humanos: remodelação contínua, pouca regeneração de membros.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <footer class="slide__footer">Presenter 02 | p.4-5</footer>
-          </article>
-        </section>
-
-        <!-- Slide 8 -->
-        <section
-          id="slide-8"
-          class="slide"
-          data-slide="8"
-          data-presenter="02"
-          data-pdf-page="5"
-          aria-label="Slide 8 — Tabela 1 (Resumo Hormonal)"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Tabela 1 — Controle Hormonal (resumo)</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <figure
-                class="table-placeholder image-placeholder"
-                aria-hidden="true"
-              >
-                [TABELA 1 — exportar/colocar tabela completa do PDF: p.5]
-              </figure>
-
-              <ul class="bullets">
-                <li>
-                  T3/T4: efeitos dependentes de estágio — estimulam ou inibem
-                  processos regenerativos conforme contexto.
+                <li class="index-item">
+                  <span class="index-topic"
+                    ><strong>Remodelação Óssea Humana</strong> — Ciclo e
+                    regulação hormonal</span
+                  >
+                  <span class="index-slides">(Slides 15-16)</span>
                 </li>
-                <li>
-                  IGF-1: reentrada no ciclo celular e proliferação de
-                  progenitores.
+                <li class="index-item">
+                  <span class="index-topic"
+                    ><strong>Hormônios Reguladores</strong></span
+                  >
+                  <ul class="sub-index">
+                    <li>PTH — Mecanismos e aplicações (Slides 17-18)</li>
+                    <li>Calcitonina e FGF23 (Slides 19-22)</li>
+                    <li>IGF-1 e GH (Slides 23-24)</li>
+                  </ul>
                 </li>
-                <li>
-                  BMPs: desdiferenciação e ativação de Runx2 para osteogênese.
+                <li class="index-item">
+                  <span class="index-topic"
+                    ><strong>Perspectivas Futuras e Conclusões</strong></span
+                  >
+                  <span class="index-slides">(Slides 25-26)</span>
                 </li>
-              </ul>
-            </div>
-            <footer class="slide__footer">Presenter 02 | p.5</footer>
-          </article>
-        </section>
-
-        <!-- Slide 9 -->
-        <section
-          id="slide-9"
-          class="slide"
-          data-slide="9"
-          data-presenter="02"
-          data-pdf-page="5-6"
-          aria-label="Slide 9 — VEGF, RA, GH"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Regulação Hormonal — VEGF, RA e GH</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>VEGF</h3>
-                <ul class="bullets">
-                  <li>
-                    Angiogênese crítica para suprimento do blastema e
-                    sobrevivência celular.
-                  </li>
-                  <li>Regulado positivamente em fases regenerativas.</li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3>RA & GH</h3>
-                <ul class="bullets">
-                  <li>
-                    Ácido retinoico: efeitos dose- e contexto-dependentes
-                    (regenerativo ou inibitório).
-                  </li>
-                  <li>
-                    GH: potencia produção de IGF-1 — suporte ao crescimento
-                    local e sistêmico.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <footer class="slide__footer">Presenter 02 | p.5-6</footer>
-          </article>
-        </section>
-
-        <!-- Slide 10 -->
-        <section
-          id="slide-10"
-          class="slide"
-          data-slide="10"
-          data-presenter="03"
-          data-pdf-page="6-7"
-          aria-label="Slide 10 — Fase Inicial: Hemostasia e Inflamação"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Fase Inicial — Hemostasia & Inflamação</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>
-                  Hemostasia: matriz provisória e preparação do sítio para
-                  recrutamento celular.
-                </li>
-                <li>
-                  Inflamação: neutrófilos → macrófagos; macrófagos liberam
-                  citocinas e fatores de crescimento.
-                </li>
-                <li>
-                  Xenopus: ROS e hipóxia modulam sinalização imune e perda
-                  regenerativa ontogenética.
-                </li>
-                <li>
-                  Ativação hormonal inicial (p.ex. PTHrP, Sox9) auxilia
-                  recrutamento e condrogênese.
-                </li>
-              </ul>
-            </div>
-            <footer class="slide__footer">Presenter 03 | p.6-7</footer>
-          </article>
-        </section>
-
-        <!-- Slide 11 -->
-        <section
-          id="slide-11"
-          class="slide"
-          data-slide="11"
-          data-presenter="03"
-          data-pdf-page="7"
-          aria-label="Slide 11 — Epimorfismo e Blastema (Figura 1)"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">
-              Regeneração Epimórfica & Formação do Blastema
-            </h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <ol class="numbered">
-                  <li>Amputação → formação da epiderme da ferida.</li>
-                  <li>
-                    Inervação é essencial → fatores de crescimento neurais.
-                  </li>
-                  <li>
-                    Desdiferenciação → acúmulo de progenitores (blastema).
-                  </li>
-                  <li>
-                    Proliferação e padronização → restauração completa do
-                    membro.
-                  </li>
-                </ol>
-              </div>
-              <div class="col">
-                <figure class="image-placeholder" aria-hidden="true">
-                  [FIGURA 1 — inserir imagem exportada do PDF p.7]
-                </figure>
-              </div>
-            </div>
-            <footer class="slide__footer">Presenter 03 | p.7</footer>
-          </article>
-        </section>
-
-        <!-- Slide 12 -->
-        <section
-          id="slide-12"
-          class="slide"
-          data-slide="12"
-          data-presenter="03"
-          data-pdf-page="7-8"
-          aria-label="Slide 12 — Desdiferenciação e Regulação Molecular"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Desdiferenciação & Regulação Molecular</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>
-                  Osteoblastos podem desdiferenciar-se em progenitores
-                  multipotentes para formar o blastema.
-                </li>
-                <li>BMP2b/BMP6 promovem desdiferenciação e proliferação.</li>
-                <li>
-                  Shh ativa BMP e coordena o padrão de crescimento; Ptch1 é
-                  receptor crítico.
-                </li>
-                <li>
-                  Fatores de transcrição: Msx1 (indiferenciação), Pax7
-                  (proliferação).
-                </li>
-              </ul>
-            </div>
-            <footer class="slide__footer">Presenter 03 | p.7-8</footer>
-          </article>
-        </section>
-
-        <!-- Slide 13 -->
-        <section
-          id="slide-13"
-          class="slide"
-          data-slide="13"
-          data-presenter="03"
-          data-pdf-page="8"
-          aria-label="Slide 13 — Proliferação e Diferenciação"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Proliferação & Diferenciação</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Reentrada no Ciclo & Metabolismo</h3>
-                <ul class="bullets">
-                  <li>
-                    IGF-1 é crítico para reentrada no ciclo celular e expansão
-                    do blastema.
-                  </li>
-                  <li>
-                    Glicólise ↑, OXPHOS ↓ — fornece ATP rápido para proliferação
-                    intensa.
-                  </li>
-                  <li>
-                    Integração metabólica com sinais hormonais (IGF-1, T3).
-                  </li>
-                </ul>
-              </div>
-              <div class="col">
-                <h3>Diferenciação Osteogênica</h3>
-                <ul class="bullets">
-                  <li>
-                    BMP → Runx2 promove diferenciação osteoblástica e produção
-                    de osteoide.
-                  </li>
-                  <li>
-                    Sem BMP/Runx2 → diferenciação falha e mineralização
-                    comprometida.
-                  </li>
-                  <li>
-                    VEGF e vascularização são cruciais para sobrevivência e
-                    maturação do tecido.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <footer class="slide__footer">Presenter 03 | p.8</footer>
-          </article>
-        </section>
-
-        <!-- Slide 14 -->
-        <section
-          id="slide-14"
-          class="slide"
-          data-slide="14"
-          data-presenter="04"
-          data-pdf-page="8-9"
-          aria-label="Slide 14 — Remodelação óssea (ciclo)"
-        >
-          <header class="slide__header">
-            <h2 class="slide__title">Remodelação Óssea (Humanos)</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ol class="numbered">
-                <li>
-                  Ativação: osteócitos detectam dano; PTH sinaliza remodelação.
-                </li>
-                <li>
-                  Reabsorção: osteoclastos degradam mineral + matriz
-                  (RANKL/OPG).
-                </li>
-                <li>Reversão: limpeza, preparo da superfície (TGF-β, IGFs).</li>
-                <li>Formação: osteoblastos depositam matriz e mineralizam.</li>
               </ol>
             </div>
-            <footer class="slide__footer">Presenter 04 | p.8-9</footer>
-          </article>
+
+            <div class="index-footer">Estrutura da Apresentação</div>
+          </div>
         </section>
 
-        <!-- Slide 15 -->
+        <!-- Slide 4 — Importância Clínica -->
+        <section
+          id="slide-4"
+          class="slide clinical-importance"
+          data-slide="4"
+          data-presenter="01"
+          data-pdf-page="1-2"
+          aria-label="Slide 4 — Introdução: Importância Clínica"
+        >
+          <div class="clinical-container">
+            <h2 class="clinical-title">Introdução — Importância Clínica</h2>
+
+            <div class="clinical-columns">
+              <div class="clinical-column">
+                <div class="column-header">
+                  <h3>Problema Global</h3>
+                </div>
+                <div class="column-content">
+                  <div class="problem-item">
+                    Milhões afetados por doenças ósseas e traumas esqueléticos.
+                  </div>
+                  <div class="problem-item">
+                    Defeitos críticos (>2 cm) tipicamente não regeneram
+                    espontaneamente.
+                  </div>
+                  <div class="problem-item">
+                    Cicatrização insuficiente → perda funcional e custos
+                    elevados.
+                  </div>
+                </div>
+              </div>
+
+              <div class="clinical-column">
+                <div class="column-header">
+                  <h3>Soluções Emergentes</h3>
+                </div>
+                <div class="column-content">
+                  <div class="solution-item">
+                    Engenharia de tecidos e terapias celulares — promessas e
+                    limitações.
+                  </div>
+                  <div class="solution-item">
+                    Modulação hormonal e vias de sinalização como complemento.
+                  </div>
+                  <div class="solution-item">
+                    Biomateriais com liberação controlada para reduzir efeitos
+                    sistêmicos.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clinical-footer">Presenter 01 | p.1-2</div>
+          </div>
+        </section>
+
+        <!-- Slide 5 — Objetivos -->
+        <section
+          id="slide-5"
+          class="slide objectives-page"
+          data-slide="5"
+          data-presenter="01"
+          data-pdf-page="2"
+          aria-label="Slide 5 — Objetivos e Abordagem"
+        >
+          <div class="objectives-container">
+            <h2 class="objectives-title">Objetivos e Abordagem</h2>
+
+            <div class="objectives-content">
+              <div class="objective-item">
+                Objetivo: conectar mecanismos de regeneração (modelos) com
+                remodelação (humanos) via regulação hormonal.
+              </div>
+              <div class="objective-item">
+                Foco em sinais decisórios: Wnt/β-catenina, BMP, TGF-β.
+              </div>
+              <div class="objective-item">
+                Avaliar riscos e benefícios de manipulação hormonal
+                translacional.
+              </div>
+              <div class="objective-item">
+                Propor direções: biomateriais + liberação temporizada e
+                localizada.
+              </div>
+            </div>
+
+            <div class="flowchart-placeholder">
+              [Fluxograma objetivo → aplicação clínica]
+            </div>
+
+            <div class="objectives-footer">Presenter 01 | p.2</div>
+          </div>
+        </section>
+
+        <!-- Slide 6 — Desafios -->
+        <section
+          id="slide-6"
+          class="slide challenges-page"
+          data-slide="6"
+          data-presenter="01"
+          data-pdf-page="2-3"
+          aria-label="Slide 6 — Desafios Translacionais"
+        >
+          <div class="challenges-container">
+            <h2 class="challenges-title">Desafios Translacionais</h2>
+
+            <div class="challenges-columns">
+              <div class="challenge-column">
+                <div class="challenge-header">
+                  <h3>Riscos Terapêuticos</h3>
+                </div>
+                <div class="challenge-list">
+                  <div class="risk-item">
+                    Proliferação descontrolada e crescimento anormal.
+                  </div>
+                  <div class="risk-item">
+                    Desequilíbrios metabólicos e efeitos off-target.
+                  </div>
+                  <div class="risk-item">
+                    Potencial oncogênico em manipulações prolongadas.
+                  </div>
+                </div>
+              </div>
+
+              <div class="challenge-column">
+                <div class="challenge-header">
+                  <h3>Complexidade e Precisão</h3>
+                </div>
+                <div class="challenge-list">
+                  <div class="complexity-item">
+                    Crosstalk entre Wnt, BMP e TGF-β — redes interdependentes.
+                  </div>
+                  <div class="complexity-item">
+                    Gap evolutivo: extrapolar de anfíbios para mamíferos exige
+                    cautela.
+                  </div>
+                  <div class="complexity-item">
+                    Necessidade de entrega localizada e temporização.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="challenges-footer">Presenter 01 | p.2-3</div>
+          </div>
+        </section>
+
+        <!-- Slide 7 — Organismos Modelo -->
+        <section
+          id="slide-7"
+          class="slide model-organisms"
+          data-slide="7"
+          data-presenter="02"
+          data-pdf-page="3-4"
+          aria-label="Slide 7 — Organismos Modelo: Axolote & Zebrafish"
+        >
+          <div class="organisms-container">
+            <h2 class="organisms-title">
+              Organismos Modelo — Axolote & Zebrafish
+            </h2>
+
+            <div class="organisms-grid">
+              <div class="organism-card">
+                <h3 class="organism-name">Axolote (Ambystoma mexicanum)</h3>
+                <div class="organism-features">
+                  <div class="feature">
+                    Regeneração completa de membros, medula, coração e partes do
+                    cérebro sem cicatrizes.
+                  </div>
+                  <div class="feature">
+                    Blastema verdadeiro formado por desdiferenciação local.
+                  </div>
+                  <div class="feature">
+                    T3/T4 baixos mantêm capacidade regenerativa; manipulações
+                    hormonais alteram dinâmica.
+                  </div>
+                </div>
+              </div>
+
+              <div class="organism-card">
+                <h3 class="organism-name">Zebrafish (Danio rerio)</h3>
+                <div class="organism-features">
+                  <div class="feature">
+                    Transparência embrionária e alta manipulabilidade genética.
+                  </div>
+                  <div class="feature">
+                    Nadadeiras regenerativas como modelo análogo à ossificação.
+                  </div>
+                  <div class="feature">
+                    PTHrP → PTH1R/PTH3R influencia diferenciação osteoblástica
+                    em modelos aquáticos.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="organisms-footer">Presenter 02 | p.3-4</div>
+          </div>
+        </section>
+
+        <!-- Slide 8 — Xenopus -->
+        <section
+          id="slide-8"
+          class="slide xenopus-page"
+          data-slide="8"
+          data-presenter="02"
+          data-pdf-page="4-5"
+          aria-label="Slide 8 — Xenopus e Comparações"
+        >
+          <div class="xenopus-container">
+            <h2 class="xenopus-title">Xenopus & Análise Comparativa</h2>
+
+            <div class="xenopus-content">
+              <div class="xenopus-section">
+                <h3 class="section-title">Xenopus laevis</h3>
+                <div class="xenopus-features">
+                  <div class="xenopus-feature">
+                    Girinos regeneram membros; adultos perdem progressivamente
+                    essa habilidade.
+                  </div>
+                  <div class="xenopus-feature">
+                    Pico de T3 durante metamorfose correlaciona com perda
+                    regenerativa.
+                  </div>
+                  <div class="xenopus-feature">
+                    Modelo útil para estudar perda ontogenética da regeneração.
+                  </div>
+                </div>
+              </div>
+
+              <div class="comparison-section">
+                <h3 class="section-title">Comparativo Rápido</h3>
+                <div class="comparison-list">
+                  <div class="comparison-item">
+                    Axolote: regeneração ilimitada (neotenia).
+                  </div>
+                  <div class="comparison-item">
+                    Zebrafish: modelo genético e observação dinâmica.
+                  </div>
+                  <div class="comparison-item">
+                    Xenopus: mostra transição da capacidade regenerativa.
+                  </div>
+                  <div class="comparison-item">
+                    Humanos: remodelação contínua, pouca regeneração de membros.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="xenopus-footer">Presenter 02 | p.4-5</div>
+          </div>
+        </section>
+
+        <!-- Slide 9 — Tabela -->
+        <section
+          id="slide-9"
+          class="slide table-page"
+          data-slide="9"
+          data-presenter="02"
+          data-pdf-page="5"
+          aria-label="Slide 9 — Tabela 1 (Resumo Hormonal)"
+        >
+          <div class="table-container">
+            <h2 class="table-title">Tabela 1 — Controle Hormonal (resumo)</h2>
+
+            <div class="table-content">
+              <div class="table-placeholder">
+                [TABELA 1 — exportar/colocar tabela completa do PDF: p.5]
+              </div>
+
+              <div class="table-notes">
+                <div class="note-item">
+                  T3/T4: efeitos dependentes de estágio — estimulam ou inibem
+                  processos regenerativos conforme contexto.
+                </div>
+                <div class="note-item">
+                  IGF-1: reentrada no ciclo celular e proliferação de
+                  progenitores.
+                </div>
+                <div class="note-item">
+                  BMPs: desdiferenciação e ativação de Runx2 para osteogênese.
+                </div>
+              </div>
+            </div>
+
+            <div class="table-footer">Presenter 02 | p.5</div>
+          </div>
+        </section>
+
+        <!-- Slide 10 — Regulação Hormonal -->
+        <section
+          id="slide-10"
+          class="slide hormone-regulation"
+          data-slide="10"
+          data-presenter="02"
+          data-pdf-page="5-6"
+          aria-label="Slide 10 — VEGF, RA, GH"
+        >
+          <div class="hormone-container">
+            <h2 class="hormone-title">Regulação Hormonal — VEGF, RA e GH</h2>
+
+            <div class="hormone-grid">
+              <div class="hormone-card">
+                <h3 class="hormone-name">VEGF</h3>
+                <div class="hormone-details">
+                  <div class="hormone-point">
+                    Angiogênese crítica para suprimento do blastema e
+                    sobrevivência celular.
+                  </div>
+                  <div class="hormone-point">
+                    Regulado positivamente em fases regenerativas.
+                  </div>
+                </div>
+              </div>
+
+              <div class="hormone-card">
+                <h3 class="hormone-name">RA & GH</h3>
+                <div class="hormone-details">
+                  <div class="hormone-point">
+                    Ácido retinoico: efeitos dose- e contexto-dependentes
+                    (regenerativo ou inibitório).
+                  </div>
+                  <div class="hormone-point">
+                    GH: potencia produção de IGF-1 — suporte ao crescimento
+                    local e sistêmico.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hormone-footer">Presenter 02 | p.5-6</div>
+          </div>
+        </section>
+
+        <!-- Slide 11 — Fase Inicial -->
+        <section
+          id="slide-11"
+          class="slide initial-phase"
+          data-slide="11"
+          data-presenter="03"
+          data-pdf-page="6-7"
+          aria-label="Slide 11 — Fase Inicial: Hemostasia e Inflamação"
+        >
+          <div class="initial-phase-container">
+            <h2 class="phase-title">Fase Inicial — Hemostasia & Inflamação</h2>
+
+            <div class="phase-content">
+              <div class="phase-points">
+                <div class="phase-point">
+                  Hemostasia: matriz provisória e preparação do sítio para
+                  recrutamento celular.
+                </div>
+                <div class="phase-point">
+                  Inflamação: neutrófilos → macrófagos; macrófagos liberam
+                  citocinas e fatores de crescimento.
+                </div>
+                <div class="phase-point">
+                  Xenopus: ROS e hipóxia modulam sinalização imune e perda
+                  regenerativa ontogenética.
+                </div>
+                <div class="phase-point">
+                  Ativação hormonal inicial (p.ex. PTHrP, Sox9) auxilia
+                  recrutamento e condrogênese.
+                </div>
+              </div>
+            </div>
+
+            <div class="phase-footer">Presenter 03 | p.6-7</div>
+          </div>
+        </section>
+
+        <!-- Slide 12 — Epimorfismo -->
+        <section
+          id="slide-12"
+          class="slide epimorphosis-page"
+          data-slide="12"
+          data-presenter="03"
+          data-pdf-page="7"
+          aria-label="Slide 12 — Epimorfismo e Blastema (Figura 1)"
+        >
+          <div class="epimorphosis-container">
+            <h2 class="epimorphosis-title">
+              Regeneração Epimórfica & Formação do Blastema
+            </h2>
+
+            <div class="epimorphosis-layout">
+              <div class="process-steps">
+                <div class="process-step">
+                  <span class="step-number">1</span>
+                  <span class="step-description"
+                    >Amputação → formação da epiderme da ferida.</span
+                  >
+                </div>
+                <div class="process-step">
+                  <span class="step-number">2</span>
+                  <span class="step-description"
+                    >Inervação é essencial → fatores de crescimento
+                    neurais.</span
+                  >
+                </div>
+                <div class="process-step">
+                  <span class="step-number">3</span>
+                  <span class="step-description"
+                    >Desdiferenciação → acúmulo de progenitores
+                    (blastema).</span
+                  >
+                </div>
+                <div class="process-step">
+                  <span class="step-number">4</span>
+                  <span class="step-description"
+                    >Proliferação e padronização → restauração completa do
+                    membro.</span
+                  >
+                </div>
+              </div>
+
+              <div class="figure-side">
+                <div class="figure-placeholder">
+                  [FIGURA 1 — inserir imagem exportada do PDF p.7]
+                </div>
+              </div>
+            </div>
+
+            <div class="epimorphosis-footer">Presenter 03 | p.7</div>
+          </div>
+        </section>
+
+        <!-- Slide 13 — Desdiferenciação -->
+        <section
+          id="slide-13"
+          class="slide dedifferentiation-page"
+          data-slide="13"
+          data-presenter="03"
+          data-pdf-page="7-8"
+          aria-label="Slide 13 — Desdiferenciação e Regulação Molecular"
+        >
+          <div class="dedifferentiation-container">
+            <h2 class="dediff-title">Desdiferenciação & Regulação Molecular</h2>
+
+            <div class="dediff-content">
+              <div class="molecular-points">
+                <div class="molecular-point">
+                  Osteoblastos podem desdiferenciar-se em progenitores
+                  multipotentes para formar o blastema.
+                </div>
+                <div class="molecular-point">
+                  BMP2b/BMP6 promovem desdiferenciação e proliferação.
+                </div>
+                <div class="molecular-point">
+                  Shh ativa BMP e coordena o padrão de crescimento; Ptch1 é
+                  receptor crítico.
+                </div>
+                <div class="molecular-point">
+                  Fatores de transcrição: Msx1 (indiferenciação), Pax7
+                  (proliferação).
+                </div>
+              </div>
+            </div>
+
+            <div class="dediff-footer">Presenter 03 | p.7-8</div>
+          </div>
+        </section>
+
+        <!-- Slide 14 — Proliferação -->
+        <section
+          id="slide-14"
+          class="slide proliferation-page"
+          data-slide="14"
+          data-presenter="03"
+          data-pdf-page="8"
+          aria-label="Slide 14 — Proliferação e Diferenciação"
+        >
+          <div class="proliferation-container">
+            <h2 class="proliferation-title">Proliferação & Diferenciação</h2>
+
+            <div class="proliferation-columns">
+              <div class="proliferation-column">
+                <h3 class="column-subtitle">
+                  Reentrada no Ciclo & Metabolismo
+                </h3>
+                <div class="cycle-points">
+                  <div class="cycle-point">
+                    IGF-1 é crítico para reentrada no ciclo celular e expansão
+                    do blastema.
+                  </div>
+                  <div class="cycle-point">
+                    Glicólise ↑, OXPHOS ↓ — fornece ATP rápido para proliferação
+                    intensa.
+                  </div>
+                  <div class="cycle-point">
+                    Integração metabólica com sinais hormonais (IGF-1, T3).
+                  </div>
+                </div>
+              </div>
+
+              <div class="proliferation-column">
+                <h3 class="column-subtitle">Diferenciação Osteogênica</h3>
+                <div class="differentiation-points">
+                  <div class="diff-point">
+                    BMP → Runx2 promove diferenciação osteoblástica e produção
+                    de osteoide.
+                  </div>
+                  <div class="diff-point">
+                    Sem BMP/Runx2 → diferenciação falha e mineralização
+                    comprometida.
+                  </div>
+                  <div class="diff-point">
+                    VEGF e vascularização são cruciais para sobrevivência e
+                    maturação do tecido.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="proliferation-footer">Presenter 03 | p.8</div>
+          </div>
+        </section>
+
+        <!-- Slide 15 — Remodelação Óssea -->
         <section
           id="slide-15"
-          class="slide"
+          class="slide bone-remodeling"
           data-slide="15"
           data-presenter="04"
-          data-pdf-page="9"
-          aria-label="Slide 15 — Figura 2 / Remodelação Hormonal"
+          data-pdf-page="8-9"
+          aria-label="Slide 15 — Remodelação óssea (ciclo)"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">
-              Figura 2 — Remodelação Óssea: Regulação Hormonal
-            </h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <ul class="bullets">
-                  <li>
-                    Reabsorção: RANKL ativa osteoclastos; calcitonina os inibe;
-                    TGF-β regula o processo.
-                  </li>
-                  <li>
-                    Reversão: TGF-β, IGF-1/2, BMPs e FGFs preparam o sítio para
-                    formação.
-                  </li>
-                  <li>
-                    Formação: Wnt/β-catenina, PTH e RUNX2 promovem diferenciação
-                    osteoblástica.
-                  </li>
-                </ul>
+          <div class="remodeling-container">
+            <h2 class="remodeling-title">Remodelação Óssea (Humanos)</h2>
+
+            <div class="remodeling-process">
+              <div class="process-stage">
+                <div class="stage-number">1</div>
+                <div class="stage-content">
+                  <h4>Ativação</h4>
+                  <p>Osteócitos detectam dano; PTH sinaliza remodelação.</p>
+                </div>
               </div>
-              <div class="col">
-                <figure class="image-placeholder" aria-hidden="true">
-                  [FIGURA 2 — inserir exportação do PDF p.9]
-                </figure>
+              <div class="process-stage">
+                <div class="stage-number">2</div>
+                <div class="stage-content">
+                  <h4>Reabsorção</h4>
+                  <p>Osteoclastos degradam mineral + matriz (RANKL/OPG).</p>
+                </div>
+              </div>
+              <div class="process-stage">
+                <div class="stage-number">3</div>
+                <div class="stage-content">
+                  <h4>Reversão</h4>
+                  <p>Limpeza, preparo da superfície (TGF-β, IGFs).</p>
+                </div>
+              </div>
+              <div class="process-stage">
+                <div class="stage-number">4</div>
+                <div class="stage-content">
+                  <h4>Formação</h4>
+                  <p>Osteoblastos depositam matriz e mineralizam.</p>
+                </div>
               </div>
             </div>
-            <footer class="slide__footer">Presenter 04 | p.9</footer>
-          </article>
+
+            <div class="remodeling-footer">Presenter 04 | p.8-9</div>
+          </div>
         </section>
 
-        <!-- Slide 16 -->
+        <!-- Slide 16 — Figura 2 -->
         <section
           id="slide-16"
-          class="slide"
+          class="slide figure-two-page"
           data-slide="16"
           data-presenter="04"
-          data-pdf-page="9-10"
-          aria-label="Slide 16 — PTH mecanismos"
+          data-pdf-page="9"
+          aria-label="Slide 16 — Figura 2 / Remodelação Hormonal"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">PTH — Mecanismos Moleculares</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>
-                  PTH → PTH1R em osteoblastos/osteócitos → ativa via cAMP/PKA.
-                </li>
-                <li>
-                  Inativação de GSK-3β → estabilização de β-catenina
-                  citoplasmática.
-                </li>
-                <li>
-                  β-catenina nuclear ativa genes Wnt e programas osteogênicos
-                  (Runx2, osteocalcina).
-                </li>
-              </ul>
+          <div class="figure-two-container">
+            <h2 class="figure-two-title">
+              Figura 2 — Remodelação Óssea: Regulação Hormonal
+            </h2>
+
+            <div class="figure-two-content">
+              <div class="regulation-details">
+                <div class="regulation-point">
+                  Reabsorção: RANKL ativa osteoclastos; calcitonina os inibe;
+                  TGF-β regula o processo.
+                </div>
+                <div class="regulation-point">
+                  Reversão: TGF-β, IGF-1/2, BMPs e FGFs preparam o sítio para
+                  formação.
+                </div>
+                <div class="regulation-point">
+                  Formação: Wnt/β-catenina, PTH e RUNX2 promovem diferenciação
+                  osteoblástica.
+                </div>
+              </div>
+
+              <div class="figure-display">
+                <div class="figure-placeholder">
+                  [FIGURA 2 — inserir exportação do PDF p.9]
+                </div>
+              </div>
             </div>
-            <footer class="slide__footer">Presenter 04 | p.9-10</footer>
-          </article>
+
+            <div class="figure-two-footer">Presenter 04 | p.9</div>
+          </div>
         </section>
 
-        <!-- Slide 17 -->
+        <!-- Slide 17 — PTH Mecanismos -->
         <section
           id="slide-17"
-          class="slide"
+          class="slide pth-mechanisms"
           data-slide="17"
           data-presenter="04"
-          data-pdf-page="10-11"
-          aria-label="Slide 17 — PTH: pulsátil vs contínuo / aplicações"
+          data-pdf-page="9-10"
+          aria-label="Slide 17 — PTH mecanismos"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">PTH — Regulação Dual & Aplicações</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>
-                  Pulsátil (ex.: teriparatida) → efeito anabólico na formação
-                  óssea.
-                </li>
-                <li>
-                  Exposição contínua → favorece reabsorção (efeito catabólico).
-                </li>
-                <li>
-                  Aplicação clínica: osteoporose, não-uniões; estratégias locais
-                  com scaffolds para minimizar efeitos sistêmicos.
-                </li>
-              </ul>
+          <div class="pth-container">
+            <h2 class="pth-title">PTH — Mecanismos Moleculares</h2>
+
+            <div class="pth-content">
+              <div class="pth-pathway">
+                <div class="pathway-step">
+                  PTH → PTH1R em osteoblastos/osteócitos → ativa via cAMP/PKA.
+                </div>
+                <div class="pathway-step">
+                  Inativação de GSK-3β → estabilização de β-catenina
+                  citoplasmática.
+                </div>
+                <div class="pathway-step">
+                  β-catenina nuclear ativa genes Wnt e programas osteogênicos
+                  (Runx2, osteocalcina).
+                </div>
+              </div>
             </div>
-            <footer class="slide__footer">Presenter 04 | p.10-11</footer>
-          </article>
+
+            <div class="pth-footer">Presenter 04 | p.9-10</div>
+          </div>
         </section>
 
-        <!-- Slide 18 -->
+        <!-- Slide 18 — PTH Regulação -->
         <section
           id="slide-18"
-          class="slide"
+          class="slide pth-regulation"
           data-slide="18"
-          data-presenter="05"
-          data-pdf-page="11-12"
-          aria-label="Slide 18 — Calcitonina"
+          data-presenter="04"
+          data-pdf-page="10-11"
+          aria-label="Slide 18 — PTH: pulsátil vs contínuo / aplicações"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">Calcitonina — Ações e Mecanismos</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <ul class="bullets">
-                  <li>
-                    Hormônio hipocalcemiante produzido pela tireoide; inibe
-                    atividade osteoclástica.
-                  </li>
-                  <li>Reduz reabsorção óssea e favorece mineralização.</li>
-                  <li>
-                    Interage com Wnt/β-catenina para modular proliferação
-                    celular no blastema.
-                  </li>
-                </ul>
+          <div class="pth-reg-container">
+            <h2 class="pth-reg-title">PTH — Regulação Dual & Aplicações</h2>
+
+            <div class="pth-reg-content">
+              <div class="regulation-types">
+                <div class="regulation-type">
+                  <h4>Pulsátil (ex.: teriparatida)</h4>
+                  <p>→ efeito anabólico na formação óssea</p>
+                </div>
+                <div class="regulation-type">
+                  <h4>Exposição contínua</h4>
+                  <p>→ favorece reabsorção (efeito catabólico)</p>
+                </div>
               </div>
-              <div class="col">
-                <figure class="image-placeholder" aria-hidden="true">
-                  [Diagrama mecanismo calcitonina → osteoclastos]
-                </figure>
+
+              <div class="applications">
+                <div class="application-point">
+                  Aplicação clínica: osteoporose, não-uniões
+                </div>
+                <div class="application-point">
+                  Estratégias locais com scaffolds para minimizar efeitos
+                  sistêmicos
+                </div>
               </div>
             </div>
-            <footer class="slide__footer">Presenter 05 | p.11-12</footer>
-          </article>
+
+            <div class="pth-reg-footer">Presenter 04 | p.10-11</div>
+          </div>
         </section>
 
-        <!-- Slide 19 -->
+        <!-- Slide 19 — Calcitonina -->
         <section
           id="slide-19"
-          class="slide"
+          class="slide calcitonin-page"
           data-slide="19"
           data-presenter="05"
-          data-pdf-page="11-13"
-          aria-label="Slide 19 — FGF23"
+          data-pdf-page="11-12"
+          aria-label="Slide 19 — Calcitonina"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">FGF23 — Metabolismo do Fosfato</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>
-                  FGF23 reduz reabsorção renal de fosfato e suprime síntese de
-                  calcitriol.
-                </li>
-                <li>
-                  Níveis elevados → hipofosfatemia e prejuízo na mineralização
-                  óssea.
-                </li>
-                <li>
-                  Implicações clínicas: raquitismo, osteomalacia e distúrbios
-                  metabólicos ósseos.
-                </li>
-                <li>
-                  Interações com Wnt/BMP podem modular efeitos sobre
-                  osteogênese.
-                </li>
-              </ul>
+          <div class="calcitonin-container">
+            <h2 class="calcitonin-title">Calcitonina — Ações e Mecanismos</h2>
 
-              <figure
-                class="table-placeholder image-placeholder"
-                aria-hidden="true"
-              >
-                [TABELA 2 — inserir exportação do PDF p.12–13]
-              </figure>
+            <div class="calcitonin-layout">
+              <div class="calcitonin-info">
+                <div class="calcitonin-point">
+                  Hormônio hipocalcemiante produzido pela tireoide; inibe
+                  atividade osteoclástica.
+                </div>
+                <div class="calcitonin-point">
+                  Reduz reabsorção óssea e favorece mineralização.
+                </div>
+                <div class="calcitonin-point">
+                  Interage com Wnt/β-catenina para modular proliferação celular
+                  no blastema.
+                </div>
+              </div>
+
+              <div class="calcitonin-diagram">
+                <div class="diagram-placeholder">
+                  [Diagrama mecanismo calcitonina → osteoclastos]
+                </div>
+              </div>
             </div>
-            <footer class="slide__footer">Presenter 05 | p.11-13</footer>
-          </article>
+
+            <div class="calcitonin-footer">Presenter 05 | p.11-12</div>
+          </div>
         </section>
 
-        <!-- Slide 20 -->
+        <!-- Slide 20 — FGF23 -->
         <section
           id="slide-20"
-          class="slide"
+          class="slide fgf23-page"
           data-slide="20"
           data-presenter="05"
-          data-pdf-page="12-13"
-          aria-label="Slide 20 — Interações FGF23"
+          data-pdf-page="11-13"
+          aria-label="Slide 20 — FGF23"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">Interações Complexas do FGF23</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body">
-              <ul class="bullets">
-                <li>
-                  Em condições fisiológicas FGF23 pode ativar Wnt/β-catenina,
-                  favorecendo osteoblastos.
-                </li>
-                <li>
-                  Em condições patológicas, sinalização de FGF23 pode ser
-                  disruptiva e prejudicar a mineralização.
-                </li>
-                <li>
-                  Com BMP, FGF23 pode estimular ou inibir osteogênese —
-                  dependente de contexto.
-                </li>
-                <li>
-                  Monitoramento de fosfato/calcitriol é crítico em manipulações
-                  terapêuticas.
-                </li>
-              </ul>
+          <div class="fgf23-container">
+            <h2 class="fgf23-title">FGF23 — Metabolismo do Fosfato</h2>
+
+            <div class="fgf23-content">
+              <div class="fgf23-points">
+                <div class="fgf23-point">
+                  FGF23 reduz reabsorção renal de fosfato e suprime síntese de
+                  calcitriol.
+                </div>
+                <div class="fgf23-point">
+                  Níveis elevados → hipofosfatemia e prejuízo na mineralização
+                  óssea.
+                </div>
+                <div class="fgf23-point">
+                  Implicações clínicas: raquitismo, osteomalacia e distúrbios
+                  metabólicos ósseos.
+                </div>
+                <div class="fgf23-point">
+                  Interações com Wnt/BMP podem modular efeitos sobre
+                  osteogênese.
+                </div>
+              </div>
+
+              <div class="fgf23-table">
+                <div class="table-placeholder">
+                  [TABELA 2 — inserir exportação do PDF p.12–13]
+                </div>
+              </div>
             </div>
-            <footer class="slide__footer">Presenter 05 | p.12-13</footer>
-          </article>
+
+            <div class="fgf23-footer">Presenter 05 | p.11-13</div>
+          </div>
         </section>
 
-        <!-- Slide 21 -->
+        <!-- Slide 21 — Interações FGF23 -->
         <section
           id="slide-21"
-          class="slide"
+          class="slide fgf23-interactions"
           data-slide="21"
           data-presenter="05"
-          data-pdf-page="13-14"
-          aria-label="Slide 21 — Integração terapêutica"
+          data-pdf-page="12-13"
+          aria-label="Slide 21 — Interações FGF23"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">
-              Integração Terapêutica: Calcitonina & FGF23
-            </h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Estratégias Clínicas</h3>
-                <ul class="bullets">
-                  <li>Calcitonina: reduzir reabsorção quando indicado.</li>
-                  <li>Controle de FGF23 para evitar hipofosfatemia.</li>
-                  <li>
-                    Manutenção do equilíbrio cálcio-fosfato essencial para
-                    mineralização.
-                  </li>
-                </ul>
+          <div class="interactions-container">
+            <h2 class="interactions-title">Interações Complexas do FGF23</h2>
+
+            <div class="interactions-content">
+              <div class="interaction-point">
+                Em condições fisiológicas FGF23 pode ativar Wnt/β-catenina,
+                favorecendo osteoblastos.
               </div>
-              <div class="col">
-                <h3>Abordagens de Entrega</h3>
-                <ul class="bullets">
-                  <li>
-                    Sistemas de liberação controlada (scaffolds, polímeros
-                    biodegradáveis).
-                  </li>
-                  <li>Terapias locais para reduzir efeitos sistêmicos.</li>
-                  <li>
-                    Combinação com fatores osteogênicos (BMP, IGF) para
-                    sinergia.
-                  </li>
-                </ul>
+              <div class="interaction-point">
+                Em condições patológicas, sinalização de FGF23 pode ser
+                disruptiva e prejudicar a mineralização.
+              </div>
+              <div class="interaction-point">
+                Com BMP, FGF23 pode estimular ou inibir osteogênese — dependente
+                de contexto.
+              </div>
+              <div class="interaction-point">
+                Monitoramento de fosfato/calcitriol é crítico em manipulações
+                terapêuticas.
               </div>
             </div>
-            <footer class="slide__footer">Presenter 05 | p.13-14</footer>
-          </article>
+
+            <div class="interactions-footer">Presenter 05 | p.12-13</div>
+          </div>
         </section>
 
-        <!-- Slide 22 -->
+        <!-- Slide 22 — Integração Terapêutica -->
         <section
           id="slide-22"
-          class="slide"
+          class="slide therapeutic-integration"
           data-slide="22"
-          data-presenter="06"
-          data-pdf-page="14"
-          aria-label="Slide 22 — IGF-1 & GH"
+          data-presenter="05"
+          data-pdf-page="13-14"
+          aria-label="Slide 22 — Integração terapêutica"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">IGF-1 & GH — Papel na Regeneração</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>IGF-1</h3>
-                <ul class="bullets">
-                  <li>
-                    Estimula proliferação, diferenciação e maturação de
-                    osteoblastos.
-                  </li>
-                  <li>
-                    Liga-se a IGF-1R e ativa PI3K/Akt (sobrevivência) e MAPK
-                    (proliferação).
-                  </li>
-                  <li>Regula síntese de matriz e mineralização.</li>
-                </ul>
+          <div class="therapeutic-container">
+            <h2 class="therapeutic-title">
+              Integração Terapêutica: Calcitonina & FGF23
+            </h2>
+
+            <div class="therapeutic-columns">
+              <div class="therapeutic-column">
+                <h3 class="column-title">Estratégias Clínicas</h3>
+                <div class="strategy-list">
+                  <div class="strategy">
+                    Calcitonina: reduzir reabsorção quando indicado.
+                  </div>
+                  <div class="strategy">
+                    Controle de FGF23 para evitar hipofosfatemia.
+                  </div>
+                  <div class="strategy">
+                    Manutenção do equilíbrio cálcio-fosfato essencial para
+                    mineralização.
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <h3>GH</h3>
-                <ul class="bullets">
-                  <li>Estimula produção hepática/local de IGF-1.</li>
-                  <li>Potencializa efeitos osteogênicos do IGF-1.</li>
-                  <li>Contribui para crescimento ósseo geral e reparo.</li>
-                </ul>
+
+              <div class="therapeutic-column">
+                <h3 class="column-title">Abordagens de Entrega</h3>
+                <div class="delivery-list">
+                  <div class="delivery-approach">
+                    Sistemas de liberação controlada (scaffolds, polímeros
+                    biodegradáveis).
+                  </div>
+                  <div class="delivery-approach">
+                    Terapias locais para reduzir efeitos sistêmicos.
+                  </div>
+                  <div class="delivery-approach">
+                    Combinação com fatores osteogênicos (BMP, IGF) para
+                    sinergia.
+                  </div>
+                </div>
               </div>
             </div>
-            <footer class="slide__footer">Presenter 06 | p.14</footer>
-          </article>
+
+            <div class="therapeutic-footer">Presenter 05 | p.13-14</div>
+          </div>
         </section>
 
-        <!-- Slide 23 -->
+        <!-- Slide 23 — IGF-1 & GH -->
         <section
           id="slide-23"
-          class="slide"
+          class="slide igf-gh-page"
           data-slide="23"
           data-presenter="06"
-          data-pdf-page="14-15"
-          aria-label="Slide 23 — Riscos e Benefícios IGF/GH"
+          data-pdf-page="14"
+          aria-label="Slide 23 — IGF-1 & GH"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">Riscos & Benefícios do IGF/GH</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Benefícios</h3>
-                <ul class="bullets">
-                  <li>Aceleração do reparo tecidual e proliferação celular.</li>
-                  <li>
-                    Promoção da angiogênese e diferenciação osteoblástica.
-                  </li>
-                  <li>
-                    Potencial em distúrbios de crescimento e reparo ósseo.
-                  </li>
-                </ul>
+          <div class="igf-gh-container">
+            <h2 class="igf-gh-title">IGF-1 & GH — Papel na Regeneração</h2>
+
+            <div class="igf-gh-grid">
+              <div class="hormone-card">
+                <h3 class="hormone-card-title">IGF-1</h3>
+                <div class="hormone-features">
+                  <div class="hormone-feature">
+                    Estimula proliferação, diferenciação e maturação de
+                    osteoblastos.
+                  </div>
+                  <div class="hormone-feature">
+                    Liga-se a IGF-1R e ativa PI3K/Akt (sobrevivência) e MAPK
+                    (proliferação).
+                  </div>
+                  <div class="hormone-feature">
+                    Regula síntese de matriz e mineralização.
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <h3>Riscos</h3>
-                <ul class="bullets">
-                  <li>Potencial oncogênico e tumorigenicidade.</li>
-                  <li>
-                    Senescência celular prematura e efeitos metabólicos
-                    adversos.
-                  </li>
-                  <li>
-                    Proliferação descontrolada; risco de acromegalia com
-                    excesso.
-                  </li>
-                </ul>
+
+              <div class="hormone-card">
+                <h3 class="hormone-card-title">GH</h3>
+                <div class="hormone-features">
+                  <div class="hormone-feature">
+                    Estimula produção hepática/local de IGF-1.
+                  </div>
+                  <div class="hormone-feature">
+                    Potencializa efeitos osteogênicos do IGF-1.
+                  </div>
+                  <div class="hormone-feature">
+                    Contribui para crescimento ósseo geral e reparo.
+                  </div>
+                </div>
               </div>
             </div>
-            <footer class="slide__footer">Presenter 06 | p.14-15</footer>
-          </article>
+
+            <div class="igf-gh-footer">Presenter 06 | p.14</div>
+          </div>
         </section>
 
-        <!-- Slide 24 -->
+        <!-- Slide 24 — Riscos IGF/GH -->
         <section
           id="slide-24"
-          class="slide"
+          class="slide risks-benefits"
           data-slide="24"
           data-presenter="06"
-          data-pdf-page="15-16"
-          aria-label="Slide 24 — Interações e Perspectivas Futuras"
+          data-pdf-page="14-15"
+          aria-label="Slide 24 — Riscos e Benefícios IGF/GH"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">Interações & Perspectivas Futuras</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Rede de Interações</h3>
-                <ul class="bullets">
-                  <li>
-                    IGF/GH ↔ BMP/TGF-β/Wnt: controle de destino celular —
-                    osteogênese vs fibrose.
-                  </li>
-                  <li>
-                    Integração de sinais mecânicos e metabólicos com vias
-                    hormonais.
-                  </li>
-                </ul>
+          <div class="risks-container">
+            <h2 class="risks-title">Riscos & Benefícios do IGF/GH</h2>
+
+            <div class="risks-benefits-grid">
+              <div class="benefits-column">
+                <h3 class="column-header">Benefícios</h3>
+                <div class="benefits-list">
+                  <div class="benefit">
+                    Aceleração do reparo tecidual e proliferação celular.
+                  </div>
+                  <div class="benefit">
+                    Promoção da angiogênese e diferenciação osteoblástica.
+                  </div>
+                  <div class="benefit">
+                    Potencial em distúrbios de crescimento e reparo ósseo.
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <h3>Direções Futuras</h3>
-                <ul class="bullets">
-                  <li>
-                    Biomateriais sensíveis a sinais hormonais e liberação
-                    temporal.
-                  </li>
-                  <li>
-                    Combinações sinérgicas de fatores e medicina de precisão
-                    molecular.
-                  </li>
-                  <li>
-                    Modelos comparativos para identificar vias conservadas e
-                    seguras.
-                  </li>
-                </ul>
+
+              <div class="risks-column">
+                <h3 class="column-header">Riscos</h3>
+                <div class="risks-list">
+                  <div class="risk">
+                    Potencial oncogênico e tumorigenicidade.
+                  </div>
+                  <div class="risk">
+                    Senescência celular prematura e efeitos metabólicos
+                    adversos.
+                  </div>
+                  <div class="risk">
+                    Proliferação descontrolada; risco de acromegalia com
+                    excesso.
+                  </div>
+                </div>
               </div>
             </div>
-            <footer class="slide__footer">Presenter 06 | p.15-16</footer>
-          </article>
+
+            <div class="risks-footer">Presenter 06 | p.14-15</div>
+          </div>
         </section>
 
-        <!-- Slide 25 -->
+        <!-- Slide 25 — Perspectivas Futuras -->
         <section
           id="slide-25"
-          class="slide"
+          class="slide future-perspectives"
           data-slide="25"
           data-presenter="06"
-          data-pdf-page="15-17"
-          aria-label="Slide 25 — Conclusões e Agradecimentos"
+          data-pdf-page="15-16"
+          aria-label="Slide 25 — Interações e Perspectivas Futuras"
         >
-          <header class="slide__header">
-            <h2 class="slide__title">Conclusões & Agradecimentos</h2>
-          </header>
-          <article class="slide__card">
-            <div class="slide__body two-column">
-              <div class="col">
-                <h3>Conclusões Principais</h3>
-                <ul class="bullets">
-                  <li>
-                    Regeneração e remodelação compartilham vias conservadas:
-                    Wnt, BMP e TGF-β.
-                  </li>
-                  <li>
-                    Hormônios centrais (PTH, calcitonina, FGF23, IGF/GH) regulam
-                    decisões osteogênicas.
-                  </li>
-                  <li>
-                    Modelos animais oferecem insights valiosos, mas tradução
-                    exige equilíbrio eficácia/segurança.
-                  </li>
-                  <li>
-                    Recomendação: intervenção local, temporizada e dirigida com
-                    monitoramento rigoroso.
-                  </li>
-                </ul>
+          <div class="perspectives-container">
+            <h2 class="perspectives-title">
+              Interações & Perspectivas Futuras
+            </h2>
+
+            <div class="perspectives-layout">
+              <div class="interactions-section">
+                <h3 class="section-header">Rede de Interações</h3>
+                <div class="interaction-points">
+                  <div class="interaction-detail">
+                    IGF/GH ↔ BMP/TGF-β/Wnt: controle de destino celular —
+                    osteogênese vs fibrose.
+                  </div>
+                  <div class="interaction-detail">
+                    Integração de sinais mecânicos e metabólicos com vias
+                    hormonais.
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <h3>Agradecimentos</h3>
-                <ul class="bullets">
-                  <li>
-                    Mehreen et al., Biology (2025) — DOI:
-                    10.3390/biology14030274
-                  </li>
-                  <li>Licença: Creative Commons CC BY 4.0</li>
-                  <li>Orientadores, colaboradores e instituição</li>
-                </ul>
+
+              <div class="future-section">
+                <h3 class="section-header">Direções Futuras</h3>
+                <div class="future-directions">
+                  <div class="direction">
+                    Biomateriais sensíveis a sinais hormonais e liberação
+                    temporal.
+                  </div>
+                  <div class="direction">
+                    Combinações sinérgicas de fatores e medicina de precisão
+                    molecular.
+                  </div>
+                  <div class="direction">
+                    Modelos comparativos para identificar vias conservadas e
+                    seguras.
+                  </div>
+                </div>
               </div>
             </div>
-            <footer class="slide__footer">Presenter 06 | p.15-17</footer>
-          </article>
+
+            <div class="perspectives-footer">Presenter 06 | p.15-16</div>
+          </div>
+        </section>
+
+        <!-- Slide 26 — Conclusões -->
+        <section
+          id="slide-26"
+          class="slide conclusions-page"
+          data-slide="26"
+          data-presenter="06"
+          data-pdf-page="15-17"
+          aria-label="Slide 26 — Conclusões e Agradecimentos"
+        >
+          <div class="conclusions-container">
+            <h2 class="conclusions-title">Conclusões & Agradecimentos</h2>
+
+            <div class="conclusions-content">
+              <div class="conclusions-column">
+                <h3 class="column-title">Conclusões Principais</h3>
+                <div class="conclusion-points">
+                  <div class="conclusion">
+                    Regeneração e remodelação compartilham vias conservadas:
+                    Wnt, BMP e TGF-β.
+                  </div>
+                  <div class="conclusion">
+                    Hormônios centrais (PTH, calcitonina, FGF23, IGF/GH) regulam
+                    decisões osteogênicas.
+                  </div>
+                  <div class="conclusion">
+                    Modelos animais oferecem insights valiosos, mas tradução
+                    exige equilíbrio eficácia/segurança.
+                  </div>
+                  <div class="conclusion">
+                    Recomendação: intervenção local, temporizada e dirigida com
+                    monitoramento rigoroso.
+                  </div>
+                </div>
+              </div>
+
+              <div class="acknowledgments-column">
+                <h3 class="column-title">Agradecimentos</h3>
+                <div class="acknowledgments-list">
+                  <div class="acknowledgment">
+                    Mehreen et al., Biology (2025) — DOI:
+                    10.3390/biology14030274
+                  </div>
+                  <div class="acknowledgment">
+                    Licença: Creative Commons CC BY 4.0
+                  </div>
+                  <div class="acknowledgment">
+                    Orientadores, colaboradores e instituição
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="conclusions-footer">Presenter 06 | p.15-17</div>
+          </div>
         </section>
       </main>
-
-      <!-- Optional footer area for presentation-wide info -->
-      <footer
-        class="presentation-footer"
-        role="contentinfo"
-        aria-hidden="false"
-      >
-        <div class="footer-inner">
-          <p class="small">
-            Arquivo-base: Mehreen et al., Biology (2025) — DOI:
-            10.3390/biology14030274
-          </p>
-        </div>
-      </footer>
     </div>
 
-    <!-- Add slides.js for keyboard/btn navigation and to set #currentSlide/#totalSlides -->
     <script src="script.js"></script>
   </body>
 </html>

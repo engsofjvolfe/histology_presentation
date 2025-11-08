@@ -1,20 +1,38 @@
-# Slide 1 — Capa
+# ROTEIRO DE APRESENTAÇÃO — REGENERAÇÃO E REMODELAÇÃO ÓSSEA
 
-(Apresentador 01 | PDF p. 1)
-“Boa tarde! Hoje vamos falar sobre um tema importante e de grande impacto clínico: como o osso é capaz de se renovar e, em alguns organismos, até se regenerar completamente.
-Nosso seminário busca conectar os mecanismos de regeneração óssea — observados em espécies como axolotes e zebrafish — com os processos de remodelação que acontecem continuamente no corpo humano.
-A revisão de Mehreen e colaboradores, publicada em Biology em 2025, mostra como hormônios e vias de sinalização se entrelaçam para regular essas respostas.
-Ao longo da apresentação, veremos o papel de hormônios como PTH, calcitonina, IGF e FGF23, e como seu entendimento pode transformar a medicina regenerativa.”
+**IMPORTANTE:** Este roteiro contém 26 slides (atualizado de 25 slides).
+- **Slide 1:** Capa principal
+- **Slide 2:** Apresentadores e instituição (PREENCHER os campos [Nome], [Instituição], [Curso] e [Professor])
+- **Slide 3:** Sumário/Índice
+- **Slides 4-26:** Conteúdo técnico
 
-# Slide 2 — Equipe e Estrutura da Apresentação
+---
 
-(Apresentador 01 | Institucional)
-“Nossa equipe dividiu o tema em seis partes, cada uma conduzida por um apresentador.
-Vamos começar com o contexto e os desafios clínicos, depois explorar os modelos animais de regeneração, as fases celulares e hormonais envolvidas, e, por fim, conectar esses achados à remodelação humana e às aplicações clínicas.
-Essa sequência foi pensada para que cada etapa da fala reflita o próprio processo biológico: inflamação, proliferação, diferenciação e remodelação.
-No final, esperamos demonstrar como a biologia comparativa pode orientar a reconstrução funcional do tecido ósseo humano.”
+# Slide 1 — Capa Principal
 
-# Slide 3 — Introdução: Importância Clínica
+(Apresentador 01)
+"Boa tarde a todos! Bem-vindos à nossa apresentação sobre 'Conectando Remodelação e Regeneração Óssea: Desvendando Hormônios e Vias de Sinalização'.
+Este seminário é baseado na revisão integrativa de Mehreen e colaboradores, publicada em Biology em 2025.
+Hoje vamos explorar como o osso é capaz de se renovar e, em alguns organismos, até se regenerar completamente."
+
+# Slide 2 — Apresentadores e Instituição
+
+(Apresentador 01)
+"Antes de começarmos, gostaria de apresentar nossa equipe e o contexto institucional desta apresentação.
+[Apontar para os nomes na tela]
+Somos seis apresentadores, e cada um ficará responsável por uma parte específica do seminário.
+Esta apresentação faz parte da disciplina de Histologia, sob orientação do(a) Professor(a) [Nome]."
+
+# Slide 3 — Sumário
+
+(Apresentador 01)
+"Para facilitar o acompanhamento, organizamos a apresentação em seis grandes blocos.
+Começaremos com a introdução ao problema clínico e os objetivos da revisão.
+Depois exploraremos os organismos modelo — axolote, zebrafish e xenopus — que nos ensinam sobre regeneração.
+Em seguida, abordaremos as fases celulares da regeneração e o ciclo de remodelação óssea humana.
+Por fim, mergulharemos nos hormônios reguladores: PTH, calcitonina, FGF23, IGF e GH, concluindo com as perspectivas futuras para a medicina regenerativa."
+
+# Slide 4 — Introdução: Importância Clínica
 
 (Apresentador 01 | PDF p. 1–2)
 “As doenças e traumas ósseos são um grande desafio global. Milhões de pessoas sofrem com fraturas, osteoporose e lesões complexas.
@@ -23,7 +41,7 @@ Atualmente usamos enxertos, biomateriais e terapia celular, mas muitas vezes o r
 A medicina regenerativa busca resolver isso combinando engenharia de tecidos, células-tronco e modulação hormonal.
 Nosso objetivo é entender se podemos recriar, nos humanos, as condições hormonais e moleculares que permitem a regeneração natural observada em outras espécies.”
 
-# Slide 4 — Objetivos e Abordagem
+# Slide 5 — Objetivos e Abordagem
 
 (Apresentador 01 | PDF p. 2)
 “O objetivo da revisão é conectar regeneração e remodelação óssea por meio da regulação hormonal.
@@ -31,7 +49,7 @@ As principais vias estudadas são Wnt/β-catenina, BMP e TGF-β, todas envolvida
 Essas vias são interdependentes: estimular Wnt pode ativar BMP e, indiretamente, interferir em TGF-β, produzindo respostas celulares complexas.
 O desafio é entender esse crosstalk, pois pequenas variações na dose, tempo ou localização do sinal hormonal podem determinar se o tecido regenera ou se forma uma cicatriz.”
 
-# Slide 5 — Desafios Translacionais
+# Slide 6 — Desafios Translacionais
 
 (Apresentador 01 | PDF p. 2–3)
 “A transposição desses achados para a medicina humana enfrenta limitações importantes.
@@ -42,7 +60,7 @@ Por isso, a liberação hormonal precisa ser localizada e temporizada, imitando 
 A entrega contínua, ao contrário, pode levar a reabsorção excessiva ou perda estrutural.
 [aponte para o diagrama: ele mostra as interações e os riscos da sinalização fora de controle].”
 
-# Slide 6 — Axolote e Zebrafish
+# Slide 7 — Axolote e Zebrafish
 
 (Apresentador 02 | PDF p. 3–4)
 “O axolote é o modelo mais completo de regeneração. Ele regenera membros, medula e até coração, mantendo níveis baixos de T3 e T4 por toda a vida.
@@ -52,7 +70,7 @@ Por ter embriões transparentes, conseguimos observar a regeneração ao vivo.
 Suas vias Wnt, FGF e BMP são conservadas, e ele usa o PTHrP, que atua em receptores PTH1R e PTH3R — semelhantes aos humanos — para modular a atividade dos osteoblastos.
 Esses dois modelos revelam como a regulação hormonal molda a plasticidade celular.”
 
-# Slide 7 — Xenopus e Comparações Entre Espécies
+# Slide 8 — Xenopus e Comparações Entre Espécies
 
 (Apresentador 02 | PDF p. 4–5)
 “O Xenopus laevis é um caso de transição interessante.
@@ -61,7 +79,7 @@ Isso ocorre porque, durante a metamorfose, o hormônio T3 aumenta, promovendo di
 Comparando: o axolote é um regenerador vitalício, o zebrafish um modelo genético intermediário, e o Xenopus representa a perda evolutiva da regeneração.
 Nos humanos, esse processo culmina na remodelação óssea contínua, que é uma regeneração limitada — eficaz para microlesões, mas incapaz de reconstruir grandes estruturas.”
 
-# Slide 8 — Regulação Hormonal nos Modelos
+# Slide 9 — Regulação Hormonal nos Modelos
 
 (Apresentador 02 | PDF p. 5)
 “Nos três modelos, o T3/T4 é um regulador-chave.
@@ -71,7 +89,7 @@ Sua queda pós-metamorfose em Xenopus explica a perda da regeneração.
 As BMPs induzem desdiferenciação e diferenciam osteoblastos, ativando o gene Runx2, necessário para formar matriz óssea.
 Essas interações mostram que a regeneração não é um evento único, mas uma orquestra hormonal em várias fases.”
 
-# Slide 9 — Outros Hormônios: VEGF, RA e GH
+# Slide 10 — Outros Hormônios: VEGF, RA e GH
 
 (Apresentador 02 | PDF p. 5–6)
 “O VEGF promove angiogênese, garantindo oxigênio e nutrientes ao tecido em regeneração.
@@ -81,7 +99,7 @@ Isso mostra a importância da dose e do tempo.
 O GH atua de forma indireta, estimulando a produção de IGF-1 tanto no fígado quanto no local da lesão, ampliando a resposta regenerativa.
 Esses hormônios formam um circuito integrado, conectando metabolismo, vascularização e crescimento ósseo.”
 
-# Slide 10 — Fase Inicial: Resposta à Lesão
+# Slide 11 — Fase Inicial: Resposta à Lesão
 
 (Apresentador 03 | PDF p. 6–7)
 “A regeneração começa com a inflamação.
@@ -92,7 +110,7 @@ O axolote, por manter T3/T4 baixos, preserva um ambiente permissivo à regenera�
 O zebrafish ativa a via PTHrP–PTH1R/PTH3R, estimulando osteoblastos, enquanto Sox9 inicia a condrogênese.
 Essa primeira fase é determinante: define se o tecido seguirá para cicatrização ou regeneração verdadeira.”
 
-# Slide 11 — Regeneração Epimórfica e Blastema
+# Slide 12 — Regeneração Epimórfica e Blastema
 
 (Apresentador 03 | PDF p. 7)
 “O processo epimórfico segue etapas bem definidas.
@@ -102,7 +120,7 @@ Essas células formam o blastema, uma massa proliferativa com capacidade de recr
 No axolote, esse processo resulta em regeneração total do membro, inclusive ossos, articulações e vasos.
 O hormônio PTH tem papel crítico aqui: ele ajuda a reprogramar células para um estado menos diferenciado, favorecendo a plasticidade do blastema.”
 
-# Slide 12 — Formação e Regulação do Blastema
+# Slide 13 — Formação e Regulação do Blastema
 
 (Apresentador 03 | PDF p. 7–8)
 “Durante a desdiferenciação, osteoblastos maduros retornam a um estado progenitor.
@@ -112,7 +130,7 @@ A via Sonic Hedgehog (Shh) ativa BMP, garantindo o padrão espacial correto — 
 O receptor Ptch1 atua como ponto de controle dessa sinalização.
 Essa rede de fatores mantém o equilíbrio entre crescimento e organização, garantindo que a regeneração produza um membro funcional, não apenas uma massa celular.”
 
-# Slide 13 — Proliferação e Diferenciação
+# Slide 14 — Proliferação e Diferenciação
 
 (Apresentador 03 | PDF p. 8)
 “Com o blastema formado, as células reentram no ciclo celular.
@@ -123,7 +141,7 @@ Esse metabolismo mais ativo é controlado por IGF-1 e T3.
 Na fase final, as BMPs ativam Runx2, levando à diferenciação osteoblástica e à produção de matriz óssea.
 Sem essa via, a regeneração estagna, e o tecido perde a capacidade de mineralização.”
 
-# Slide 14 — Remodelação Óssea em Humanos
+# Slide 15 — Remodelação Óssea em Humanos
 
 (Apresentador 04 | PDF p. 8–9)
 “Nos humanos, o osso passa por um ciclo constante de remodelação, dividido em quatro etapas: ativação, reabsorção, reversão e formação.
@@ -133,7 +151,7 @@ Na fase de reversão, ocorre limpeza e preparação da superfície.
 Por fim, osteoblastos depositam nova matriz de colágeno e iniciam a mineralização.
 Esse ciclo mantém o osso forte e funcional — é uma versão contínua, em miniatura, da regeneração observada nos modelos animais.”
 
-# Slide 15 — Regulação Hormonal da Remodelação
+# Slide 16 — Regulação Hormonal da Remodelação
 
 (Apresentador 04 | PDF p. 9)
 “Durante o ciclo de remodelação, diversas vias hormonais entram em jogo.
@@ -144,7 +162,7 @@ As BMPs e FGFs preparam a superfície para deposição de matriz.
 Na formação, as vias Wnt/β-catenina e RUNX2 impulsionam a diferenciação osteoblástica, enquanto o FGF23 regula o metabolismo do fosfato.
 [aponte para a Figura 2 — ela resume essas interações].”
 
-# Slide 16 — PTH: Mecanismos Moleculares
+# Slide 17 — PTH: Mecanismos Moleculares
 
 (Apresentador 04 | PDF p. 10)
 “O PTH atua ligando-se ao receptor PTH1R em osteoblastos e osteócitos.
@@ -153,7 +171,7 @@ A β-catenina então se move para o núcleo, onde ativa genes osteogênicos como
 Quando administrado de forma pulsátil, o PTH estimula a formação óssea; mas se aplicado continuamente, provoca reabsorção.
 Esse comportamento dual é explorado clinicamente, especialmente no tratamento da osteoporose.”
 
-# Slide 17 — Regulação Dual e Aplicações Clínicas
+# Slide 18 — Regulação Dual e Aplicações Clínicas
 
 (Apresentador 04 | PDF p. 10–11)
 “O PTH aumenta a expressão de RANKL nos osteoblastos, o que, por sua vez, estimula a formação de osteoclastos.
@@ -162,7 +180,7 @@ A vitamina D atua junto, controlando a absorção de cálcio e mantendo a homeos
 Na clínica, usamos PTH recombinante — teriparatida — em terapias anabólicas para osteoporose e em defeitos de consolidação óssea.
 Combinar esse hormônio com biomateriais de liberação localizada tem mostrado bons resultados, reduzindo efeitos sistêmicos e acelerando a regeneração.”
 
-# Slide 18 — Calcitonina: Ações e Mecanismos
+# Slide 19 — Calcitonina: Ações e Mecanismos
 
 (Apresentador 05 | PDF p. 11–12)
 “A calcitonina, produzida pela tireoide, é o contraponto do PTH.
@@ -172,7 +190,7 @@ Assim, embora antagonize o PTH no metabolismo do cálcio, pode agir sinergicamen
 Em zebrafish, a calcitonina também modula a proliferação do blastema, ajudando a evitar crescimento excessivo.
 Esse equilíbrio entre estímulo e controle é fundamental para regenerar com segurança.”
 
-# Slide 19 — FGF23: Regulação do Fosfato
+# Slide 20 — FGF23: Regulação do Fosfato
 
 (Apresentador 05 | PDF p. 11–12)
 “O FGF23 é um hormônio fosfatúrico, ou seja, reduz a reabsorção renal de fosfato.
@@ -181,7 +199,7 @@ Esse controle evita acúmulo de fosfato e garante uma mineralização adequada.
 Quando está em excesso, causa hipofosfatemia e prejudica o osso — condições como raquitismo e osteomalacia estão ligadas a ele.
 Na regeneração, o equilíbrio entre FGF23 e PTH é essencial para manter a homeostase mineral e estrutural do tecido ósseo.”
 
-# Slide 20 — FGF23 e Interações com Outras Vias
+# Slide 21 — FGF23 e Interações com Outras Vias
 
 (Apresentador 05 | PDF p. 12–13)
 “O FGF23 também conversa com outras vias.
@@ -191,7 +209,7 @@ Comparando espécies, vemos que humanos e zebrafish compartilham mecanismos seme
 Genes como CALCR, CRLR, FGF23 e PTH1R aparecem conservados.
 Isso reforça a ideia de que a regeneração e a remodelação usam o mesmo alfabeto molecular — apenas com sintaxes diferentes.”
 
-# Slide 21 — Integração Terapêutica: Calcitonina e FGF23
+# Slide 22 — Integração Terapêutica: Calcitonina e FGF23
 
 (Apresentador 05 | PDF p. 13–14)
 “Essas abordagens combinadas são especialmente promissoras em implantes e enxertos ósseos, onde o controle do ambiente local é essencial.
@@ -199,16 +217,16 @@ Por exemplo, scaffolds podem ser projetados para liberar calcitonina nos primeir
 Essa integração hormonal, controlada temporalmente, é o que se aproxima mais da homeostase natural.
 Em síntese, a ideia é mimetizar a fisiologia, permitindo que o próprio tecido recupere sua função sem dependência permanente de fármacos.”
 
-# Slide 22 — IGF-1 e GH: Papel na Regeneração
+# Slide 23 — IGF-1 e GH: Papel na Regeneração
 
 (Apresentador 06 | PDF p. 14)
 “O IGF-1, ou fator de crescimento semelhante à insulina, é um dos principais mediadores da regeneração.
 Ele promove proliferação, diferenciação e maturação de osteoblastos, atuando via receptor IGF-1R.
 Essa ligação ativa as vias PI3K/Akt e MAPK, responsáveis por sobrevivência e multiplicação celular.
 O hormônio do crescimento (GH) potencializa esses efeitos, aumentando a produção de IGF-1 tanto no fígado quanto no próprio osso.
-Em conjunto, GH e IGF-1 equilibram crescimento e mineralização, o que é essencial não só na regeneração, mas também na manutenção esquelética ao longo da vida.”
+Em conjunto, GH e IGF-1 equilibram crescimento e mineralização, o que é essencial não só na regeneração, mas também na manutenção esquelética ao longo da vida."
 
-# Slide 23 — Riscos e Benefícios do IGF/GH
+# Slide 24 — Riscos e Benefícios do IGF/GH
 
 (Apresentador 06 | PDF p. 14–15)
 “O IGF e o GH trazem benefícios expressivos: estimulam a angiogênese, aumentam a taxa de proliferação celular e favorecem a formação de matriz.
@@ -218,7 +236,7 @@ Esse é um ponto crítico da aplicação clínica — precisamos manter o estím
 O segredo está no controle temporal e espacial da entrega.
 [aponte para o gráfico ou esquema do slide, destacando a relação entre benefício e risco].”
 
-# Slide 24 — Interações e Perspectivas Futuras
+# Slide 25 — Interações e Perspectivas Futuras
 
 (Apresentador 06 | PDF p. 15–16)
 “O futuro da regeneração óssea está em compreender a rede de interações hormonais.
@@ -227,7 +245,7 @@ Essas vias também respondem a sinais mecânicos, como carga e compressão, o qu
 Avanços recentes apontam para biomateriais sensíveis a hormônios, capazes de liberar moléculas apenas quando detectam um estímulo específico, como o PTH.
 Além disso, a medicina de precisão permitirá personalizar tratamentos conforme a assinatura molecular do paciente, otimizando resultados e minimizando riscos.”
 
-# Slide 25 — Conclusões e Agradecimentos
+# Slide 26 — Conclusões e Agradecimentos
 
 (Apresentador 06 | PDF p. 15–17)
 “Chegando ao fim, podemos destacar alguns pontos principais.

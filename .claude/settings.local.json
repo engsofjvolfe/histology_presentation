@@ -14,7 +14,17 @@
       "Bash(do echo \"=== SLIDE $slide ===\")",
       "Bash(done)",
       "Bash(git push:*)",
-      "Bash(git branch:*)"
+      "Bash(git branch:*)",
+      "Bash(for i in {1..27})",
+      "Bash(do grep -q \"id=\"\"slide-$i\"\"\" index.html)",
+      "Bash(echo:*)",
+      "Bash(awk:*)",
+      "Bash(for i in {1..26})",
+      "Bash(do grep -q \"^# Slide $i —\" ROTEIRO.md)",
+      "Bash(cat:*)",
+      "Bash(do echo \"=== SLIDE $i ===\")",
+      "Bash(for slide in 1 5 10 15 20 26)",
+      "Bash(styles_temp.css)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,2474 @@
+/* ==========================================================================
+   REGENERAÇÃO E REMODELAÇÃO ÓSSEA - CSS OTIMIZADO
+   Zero espaços em branco | Máximo aproveitamento | Layouts inteligentes
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  color: #212121;
+  background: #f5f5f5;
+}
+
+#app.presentation,
+.slides {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ==========================================================================
+   SLIDE 1 - CAPA (OTIMIZADO)
+   ========================================================================== */
+#slide-1.cover-page {
+  background: linear-gradient(135deg, #1976d2, #1565c0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vh 4vw;
+}
+
+#slide-1 .cover-container {
+  text-align: center;
+  color: white;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#slide-1 .main-title {
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 300;
+  margin: 0 0 3vh 0;
+  line-height: 1.1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
+}
+
+#slide-1 .main-subtitle {
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  font-weight: 300;
+  margin: 0 0 5vh 0;
+  line-height: 1.3;
+  opacity: 0.95;
+}
+
+#slide-1 .reference-block {
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-style: italic;
+  opacity: 0.9;
+  margin-bottom: 4vh;
+}
+
+#slide-1 .footer-block {
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+  opacity: 0.85;
+  padding-top: 2vh;
+}
+
+/* ==========================================================================
+   SLIDE 2 - APRESENTADORES (OTIMIZADO)
+   ========================================================================== */
+#slide-2.presenters-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-2 .presenters-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-2 .page-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-2 .institution-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+  margin-bottom: 2vh;
+  padding: 1.5vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #1976d2;
+}
+
+#slide-2 .institution-item {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 0.8vh 0;
+  color: #424242;
+  line-height: 1.2;
+}
+
+#slide-2 .institution-item strong {
+  color: #1976d2;
+}
+
+#slide-2 .team-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-2 .team-section h3 {
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  font-weight: 500;
+}
+
+#slide-2 .team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1vh;
+  flex: 1;
+}
+
+#slide-2 .team-member {
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  display: flex;
+  align-items: center;
+  min-height: 5vh;
+}
+
+#slide-2 .team-member strong {
+  color: #1976d2;
+  margin-right: 0.5vw;
+}
+
+#slide-2 .slide-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 3 - ÍNDICE (OTIMIZADO)
+   ========================================================================== */
+#slide-3.index-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-3 .index-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-3 .index-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-3 .index-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-3 .index-list {
+  list-style: none;
+  counter-reset: index-item;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-3 .index-item {
+  counter-increment: index-item;
+  display: flex;
+  align-items: center;
+  padding: 1.5vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #1976d2;
+  position: relative;
+  min-height: 7vh;
+}
+
+#slide-3 .index-item::before {
+  content: counter(index-item);
+  background: #1976d2;
+  color: #fff;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 1.5vw;
+  flex-shrink: 0;
+}
+
+#slide-3 .index-topic {
+  flex: 1;
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  font-weight: 500;
+  color: #424242;
+  line-height: 1.2;
+}
+
+#slide-3 .index-topic strong {
+  color: #1976d2;
+}
+
+#slide-3 .index-slides {
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+  color: #757575;
+  margin-left: 1vw;
+  white-space: nowrap;
+}
+
+#slide-3 .sub-index {
+  list-style: none;
+  padding: 0.5vh 0 0 1vw;
+  margin: 0;
+  width: 100%;
+}
+
+#slide-3 .sub-index li {
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+  padding: 0.5vh 0.8vw;
+  margin-bottom: 0.5vh;
+  background: #e3f2fd;
+  border-radius: 4px;
+  color: #1565c0;
+  border-left: 2px solid #42a5f5;
+}
+
+#slide-3 .index-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 4 - IMPORTÂNCIA CLÍNICA (OTIMIZADO)
+   ========================================================================== */
+#slide-4.clinical-importance {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-4 .clinical-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-4 .clinical-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-4 .clinical-columns {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-4 .clinical-column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-4 .column-header {
+  margin-bottom: 1.5vh;
+}
+
+#slide-4 .column-header h3 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-4 .column-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-4 .problem-item,
+#slide-4 .solution-item {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 0;
+}
+
+#slide-4 .clinical-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 5 - OBJETIVOS (OTIMIZADO)
+   ========================================================================== */
+#slide-5.objectives-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-5 .objectives-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-5 .objectives-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-5 .objectives-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  margin-bottom: 2vh;
+}
+
+#slide-5 .objective-item {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  padding: 1.5vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#slide-5 .flowchart-placeholder {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 2px dashed #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9e9e9e;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  margin-bottom: 1.5vh;
+  min-height: 20vh;
+}
+
+#slide-5 .objectives-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 6 - DESAFIOS (OTIMIZADO)
+   ========================================================================== */
+#slide-6.challenges-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-6 .challenges-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-6 .challenges-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-6 .challenges-columns {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-6 .challenge-column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-6 .challenge-header {
+  margin-bottom: 1.5vh;
+}
+
+#slide-6 .challenge-header h3 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-6 .challenge-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-6 .risk-item,
+#slide-6 .complexity-item {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#slide-6 .challenges-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 7 - ORGANISMOS MODELO (OTIMIZADO)
+   ========================================================================== */
+#slide-7.model-organisms {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-7 .organisms-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-7 .organisms-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-7 .organisms-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-7 .organism-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-7 .organism-name {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-7 .organism-features {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-7 .feature {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#slide-7 .organisms-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 8 - XENOPUS (OTIMIZADO)
+   ========================================================================== */
+#slide-8.xenopus-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-8 .xenopus-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-8 .xenopus-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-8 .xenopus-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-8 .xenopus-section,
+#slide-8 .comparison-section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-8 .section-title {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-8 .xenopus-features,
+#slide-8 .comparison-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-8 .xenopus-feature,
+#slide-8 .comparison-item {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#slide-8 .xenopus-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 9 - TABELA (OTIMIZADO)
+   ========================================================================== */
+#slide-9.table-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-9 .table-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-9 .table-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-9 .table-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+#slide-9 .table-placeholder {
+  flex: 2;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 2px dashed #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9e9e9e;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  min-height: 30vh;
+}
+
+#slide-9 .table-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vh;
+}
+
+#slide-9 .note-item {
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  padding: 1vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.2;
+}
+
+#slide-9 .table-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 10 - REGULAÇÃO HORMONAL (OTIMIZADO)
+   ========================================================================== */
+#slide-10.hormone-regulation {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-10 .hormone-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-10 .hormone-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-10 .hormone-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-10 .hormone-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-10 .hormone-name {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-10 .hormone-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-10 .hormone-point {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#slide-10 .hormone-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* CONTINUAÇÃO PARA OS DEMAIS SLIDES COM A MESMA LÓGICA... */
+
+/* ==========================================================================
+   SLIDE 11 - FASE INICIAL (OTIMIZADO)
+   ========================================================================== */
+#slide-11.initial-phase {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-11 .initial-phase-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-11 .phase-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-11 .phase-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-11 .phase-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  flex: 1;
+}
+
+#slide-11 .phase-point {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  padding: 1.5vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#slide-11 .phase-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 12 - EPIMORFISMO (OTIMIZADO)
+   ========================================================================== */
+#slide-12.epimorphosis-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-12 .epimorphosis-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-12 .epimorphosis-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-12 .epimorphosis-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-12 .process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-12 .process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5vw;
+  padding: 1.5vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+#slide-12 .process-step:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-12 .step-number {
+  background: #1976d2;
+  color: white;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-top: 0.2vh;
+}
+
+#slide-12 .step-description {
+  flex: 1;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  line-height: 1.3;
+  color: #424242;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+#slide-12 .figure-side {
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-12 .figure-placeholder {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 2px dashed #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9e9e9e;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+}
+
+#slide-12 .epimorphosis-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 13 - DESDIFERENCIAÇÃO (OTIMIZADO)
+   ========================================================================== */
+#slide-13.dedifferentiation-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-13 .dedifferentiation-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-13 .dediff-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-13 .dediff-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-13 .molecular-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  flex: 1;
+}
+
+#slide-13 .molecular-point {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  padding: 1.5vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-13 .molecular-point:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-13 .dediff-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 14 - PROLIFERAÇÃO (OTIMIZADO)
+   ========================================================================== */
+#slide-14.proliferation-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-14 .proliferation-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-14 .proliferation-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-14 .proliferation-columns {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-14 .proliferation-column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-14 .column-subtitle {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-14 .cycle-points,
+#slide-14 .differentiation-points {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-14 .cycle-point,
+#slide-14 .diff-point {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-14 .cycle-point:hover,
+#slide-14 .diff-point:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-14 .proliferation-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 15 - REMODELAÇÃO ÓSSEA (OTIMIZADO)
+   ========================================================================== */
+#slide-15.bone-remodeling {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-15 .remodeling-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-15 .remodeling-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-15 .remodeling-process {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5vw;
+  height: 100%;
+}
+
+#slide-15 .process-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2vh 1vw;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e3f2fd;
+  transition: all 0.3s ease;
+  justify-content: center;
+}
+
+#slide-15 .process-stage:hover {
+  background: #e3f2fd;
+  transform: translateY(-2px);
+}
+
+#slide-15 .stage-number {
+  background: #1976d2;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1.5vh;
+}
+
+#slide-15 .stage-content h4 {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: #1976d2;
+  margin: 0 0 1vh 0;
+  font-weight: 500;
+}
+
+#slide-15 .stage-content p {
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  color: #424242;
+  line-height: 1.3;
+}
+
+#slide-15 .remodeling-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 16 - FIGURA 2 (OTIMIZADO)
+   ========================================================================== */
+#slide-16.figure-two-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-16 .figure-two-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-16 .figure-two-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-16 .figure-two-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-16 .regulation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-16 .regulation-point {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-16 .regulation-point:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-16 .figure-display {
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-16 .figure-placeholder {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 2px dashed #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9e9e9e;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+}
+
+#slide-16 .figure-two-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 17 - PTH MECANISMOS (OTIMIZADO)
+   ========================================================================== */
+#slide-17.pth-mechanisms {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-17 .pth-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-17 .pth-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-17 .pth-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-17 .pth-pathway {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  flex: 1;
+}
+
+#slide-17 .pathway-step {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  padding: 1.5vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-17 .pathway-step:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-17 .pth-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 18 - PTH REGULAÇÃO (OTIMIZADO)
+   ========================================================================== */
+#slide-18.pth-regulation {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-18 .pth-reg-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-18 .pth-reg-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-18 .pth-reg-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+#slide-18 .regulation-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5vw;
+}
+
+#slide-18 .regulation-type {
+  padding: 2vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e3f2fd;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#slide-18 .regulation-type:hover {
+  background: #e3f2fd;
+  transform: translateY(-2px);
+}
+
+#slide-18 .regulation-type h4 {
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  color: #1976d2;
+  margin: 0 0 1vh 0;
+  font-weight: 500;
+}
+
+#slide-18 .regulation-type p {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  color: #424242;
+  line-height: 1.3;
+}
+
+#slide-18 .applications {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-18 .application-point {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  transition: all 0.2s ease;
+}
+
+#slide-18 .application-point:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-18 .pth-reg-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 19 - CALCITONINA (OTIMIZADO)
+   ========================================================================== */
+#slide-19.calcitonin-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-19 .calcitonin-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-19 .calcitonin-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-19 .calcitonin-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-19 .calcitonin-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-19 .calcitonin-point {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-19 .calcitonin-point:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-19 .calcitonin-diagram {
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-19 .diagram-placeholder {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 2px dashed #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9e9e9e;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+}
+
+#slide-19 .calcitonin-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 20 - FGF23 (OTIMIZADO)
+   ========================================================================== */
+#slide-20.fgf23-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-20 .fgf23-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-20 .fgf23-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-20 .fgf23-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+#slide-20 .fgf23-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-20 .fgf23-point {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  transition: all 0.2s ease;
+}
+
+#slide-20 .fgf23-point:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-20 .fgf23-table {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 2px dashed #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9e9e9e;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  min-height: 20vh;
+}
+
+#slide-20 .fgf23-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 21 - INTERAÇÕES FGF23 (OTIMIZADO)
+   ========================================================================== */
+#slide-21.fgf23-interactions {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-21 .interactions-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-21 .interactions-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-21 .interactions-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+#slide-21 .interaction-point {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  padding: 1.5vh 1.5vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-21 .interaction-point:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-21 .interactions-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 22 - INTEGRAÇÃO TERAPÊUTICA (OTIMIZADO)
+   ========================================================================== */
+#slide-22.therapeutic-integration {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-22 .therapeutic-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-22 .therapeutic-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-22 .therapeutic-columns {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-22 .therapeutic-column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-22 .column-title {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-22 .strategy-list,
+#slide-22 .delivery-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-22 .strategy,
+#slide-22 .delivery-approach {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-22 .strategy:hover,
+#slide-22 .delivery-approach:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-22 .therapeutic-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 23 - IGF-1 & GH (OTIMIZADO)
+   ========================================================================== */
+#slide-23.igf-gh-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-23 .igf-gh-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-23 .igf-gh-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-23 .igf-gh-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-23 .hormone-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-23 .hormone-card-title {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-23 .hormone-features {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-23 .hormone-feature {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-23 .hormone-feature:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-23 .igf-gh-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 24 - RISCOS & BENEFÍCIOS (OTIMIZADO)
+   ========================================================================== */
+#slide-24.risks-benefits {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-24 .risks-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-24 .risks-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-24 .risks-benefits-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-24 .benefits-column,
+#slide-24 .risks-column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-24 .column-header {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-24 .benefits-list,
+#slide-24 .risks-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-24 .benefit,
+#slide-24 .risk {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-24 .benefit:hover,
+#slide-24 .risk:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-24 .benefit {
+  border-left-color: #4caf50;
+}
+
+#slide-24 .risk {
+  border-left-color: #f44336;
+}
+
+#slide-24 .risks-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 25 - PERSPECTIVAS FUTURAS (OTIMIZADO)
+   ========================================================================== */
+#slide-25.future-perspectives {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-25 .perspectives-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-25 .perspectives-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-25 .perspectives-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-25 .interactions-section,
+#slide-25 .future-section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-25 .section-header {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-25 .interaction-points,
+#slide-25 .future-directions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-25 .interaction-detail,
+#slide-25 .direction {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-25 .interaction-detail:hover,
+#slide-25 .direction:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-25 .perspectives-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   SLIDE 26 - CONCLUSÕES (OTIMIZADO)
+   ========================================================================== */
+#slide-26.conclusions-page {
+  background: #eceff1;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-26 .conclusions-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5vh 2.5vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-26 .conclusions-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: #1976d2;
+  margin: 0 0 2vh 0;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #1976d2;
+  font-weight: 500;
+}
+
+#slide-26 .conclusions-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  height: 100%;
+}
+
+#slide-26 .conclusions-column,
+#slide-26 .acknowledgments-column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slide-26 .column-title {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #424242;
+  margin: 0 0 1.5vh 0;
+  padding-bottom: 0.8vh;
+  border-bottom: 2px solid #42a5f5;
+  font-weight: 500;
+}
+
+#slide-26 .conclusion-points,
+#slide-26 .acknowledgments-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#slide-26 .conclusion,
+#slide-26 .acknowledgment {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  padding: 1.2vh 1.2vw;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+  line-height: 1.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#slide-26 .conclusion:hover,
+#slide-26 .acknowledgment:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-26 .conclusions-footer {
+  margin-top: 1.5vh;
+  padding-top: 1vh;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+}
+
+/* ==========================================================================
+   ANIMAÇÕES E RESPONSIVIDADE COMPLETAS
+   ========================================================================== */
+.slide {
+  animation: slideEnter 0.4s ease-out;
+}
+
+@keyframes slideEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects para todos os slides */
+#slide-12 .process-step,
+#slide-13 .molecular-point,
+#slide-14 .cycle-point,
+#slide-14 .diff-point,
+#slide-15 .process-stage,
+#slide-16 .regulation-point,
+#slide-17 .pathway-step,
+#slide-18 .regulation-type,
+#slide-18 .application-point,
+#slide-19 .calcitonin-point,
+#slide-20 .fgf23-point,
+#slide-21 .interaction-point,
+#slide-22 .strategy,
+#slide-22 .delivery-approach,
+#slide-23 .hormone-feature,
+#slide-24 .benefit,
+#slide-24 .risk,
+#slide-25 .interaction-detail,
+#slide-25 .direction,
+#slide-26 .conclusion,
+#slide-26 .acknowledgment {
+  transition: all 0.2s ease;
+}
+
+#slide-12 .process-step:hover,
+#slide-13 .molecular-point:hover,
+#slide-14 .cycle-point:hover,
+#slide-14 .diff-point:hover,
+#slide-15 .process-stage:hover,
+#slide-16 .regulation-point:hover,
+#slide-17 .pathway-step:hover,
+#slide-18 .regulation-type:hover,
+#slide-18 .application-point:hover,
+#slide-19 .calcitonin-point:hover,
+#slide-20 .fgf23-point:hover,
+#slide-21 .interaction-point:hover,
+#slide-22 .strategy:hover,
+#slide-22 .delivery-approach:hover,
+#slide-23 .hormone-feature:hover,
+#slide-24 .benefit:hover,
+#slide-24 .risk:hover,
+#slide-25 .interaction-detail:hover,
+#slide-25 .direction:hover,
+#slide-26 .conclusion:hover,
+#slide-26 .acknowledgment:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+#slide-15 .process-stage:hover,
+#slide-18 .regulation-type:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsividade completa */
+@media (max-width: 768px) {
+  .slide {
+    padding: 1.5vh 2.5vw;
+  }
+
+  #slide-12 .epimorphosis-layout,
+  #slide-14 .proliferation-columns,
+  #slide-15 .remodeling-process,
+  #slide-16 .figure-two-content,
+  #slide-18 .regulation-types,
+  #slide-19 .calcitonin-layout,
+  #slide-22 .therapeutic-columns,
+  #slide-23 .igf-gh-grid,
+  #slide-24 .risks-benefits-grid,
+  #slide-25 .perspectives-layout,
+  #slide-26 .conclusions-content {
+    grid-template-columns: 1fr;
+    gap: 1.5vh;
+  }
+
+  #slide-15 .remodeling-process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    padding: 1vh 2vw;
+  }
+
+  #slide-15 .remodeling-process {
+    grid-template-columns: 1fr;
+  }
+
+  #slide-1 .main-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  #slide-1 .main-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  }
+}
+
+/* ==========================================================================
+   ANIMAÇÕES E AJUSTES GLOBAIS
+   ========================================================================== */
+.slide {
+  animation: slideEnter 0.4s ease-out;
+}
+
+@keyframes slideEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ajustes de hover para melhor interatividade */
+#slide-2 .team-member,
+#slide-3 .index-item,
+#slide-4 .problem-item,
+#slide-4 .solution-item,
+#slide-5 .objective-item,
+#slide-6 .risk-item,
+#slide-6 .complexity-item,
+#slide-7 .feature,
+#slide-8 .xenopus-feature,
+#slide-8 .comparison-item,
+#slide-9 .note-item,
+#slide-10 .hormone-point,
+#slide-11 .phase-point {
+  transition: all 0.2s ease;
+}
+
+#slide-2 .team-member:hover,
+#slide-3 .index-item:hover,
+#slide-4 .problem-item:hover,
+#slide-4 .solution-item:hover,
+#slide-5 .objective-item:hover,
+#slide-6 .risk-item:hover,
+#slide-6 .complexity-item:hover,
+#slide-7 .feature:hover,
+#slide-8 .xenopus-feature:hover,
+#slide-8 .comparison-item:hover,
+#slide-9 .note-item:hover,
+#slide-10 .hormone-point:hover,
+#slide-11 .phase-point:hover {
+  background: #e3f2fd;
+  transform: translateX(4px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .slide {
+    padding: 1.5vh 2.5vw;
+  }
+
+  #slide-2 .institution-details,
+  #slide-4 .clinical-columns,
+  #slide-6 .challenges-columns,
+  #slide-7 .organisms-grid,
+  #slide-8 .xenopus-content,
+  #slide-10 .hormone-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5vh;
+  }
+
+  #slide-2 .team-list {
+    grid-template-columns: 1fr;
+  }
+
+  #slide-3 .index-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vh;
+  }
+
+  #slide-3 .index-item::before {
+    position: static;
+    margin-right: 0;
+    margin-bottom: 0.5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    padding: 1vh 2vw;
+  }
+
+  #slide-1 .main-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  #slide-1 .main-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  }
+}

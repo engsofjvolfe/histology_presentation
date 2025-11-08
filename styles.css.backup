@@ -1,0 +1,2224 @@
+/* ==========================================================================
+   APRESENTA��O: REGENERA��O E REMODELA��O �SSEA
+   Estilo individual por slide (n�o-DRY) para m�xima robustez
+   Material Design inspirado | 26 slides
+   ========================================================================== */
+
+/* ==========================================================================
+   BASE STYLES (M�nimo necess�rio)
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #212121;
+  background: #fafafa;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app.presentation {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.presentation-header {
+  flex-shrink: 0;
+  background: #1976d2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.presentation-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ctrl {
+  background: white;
+  color: #1976d2;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ctrl:hover:not(:disabled) {
+  background: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ctrl:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.slide-counter {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.slides {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #eceff1;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.presentation-footer {
+  flex-shrink: 0;
+  background: #37474f;
+  color: #eceff1;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.presentation-footer .small {
+  margin: 0;
+}
+
+/* ==========================================================================
+   SLIDE 1  CAPA PRINCIPAL
+   ========================================================================== */
+
+#slide-1 {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+}
+
+#slide-1 .slide__header {
+  margin-bottom: 2rem;
+}
+
+#slide-1 .slide__title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+}
+
+#slide-1 .slide__subtitle {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin: 0;
+  opacity: 0.95;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+#slide-1 .slide__card {
+  background: transparent;
+  width: 100%;
+  max-width: 900px;
+}
+
+#slide-1 .slide__body {
+  text-align: center;
+}
+
+#slide-1 .image-placeholder {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+#slide-1 .image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#slide-1 .slide__body p {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+#slide-1 .slide__footer {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   SLIDE 2  APRESENTADORES E INSTITUIÇÃO
+   ========================================================================== */
+
+#slide-2 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-2 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-2 .slide__title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-2 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+#slide-2 .institution-info {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  border-radius: 6px;
+  border-left: 4px solid #1976d2;
+}
+
+#slide-2 .institution-info p {
+  font-size: 1.2rem;
+  margin: 0.75rem 0;
+  color: #424242;
+}
+
+#slide-2 .institution-info strong {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+#slide-2 h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #424242;
+  font-weight: 500;
+}
+
+#slide-2 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-2 .bullets li {
+  font-size: 1.15rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+  border-left: 3px solid #42a5f5;
+  color: #424242;
+}
+
+#slide-2 .bullets li strong {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+#slide-2 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   SLIDE 3  SUMÁRIO/ÍNDICE
+   ========================================================================== */
+
+#slide-3 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-3 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-3 .slide__title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-3 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+#slide-3 .numbered {
+  list-style: none;
+  counter-reset: item;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-3 .numbered > li {
+  counter-increment: item;
+  font-size: 1.15rem;
+  padding: 1rem 1rem 1rem 3rem;
+  margin-bottom: 1rem;
+  background: #f5f5f5;
+  border-radius: 6px;
+  position: relative;
+  line-height: 1.8;
+  color: #424242;
+}
+
+#slide-3 .numbered > li::before {
+  content: counter(item);
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  background: #1976d2;
+  color: white;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#slide-3 .numbered strong {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+#slide-3 .bullets {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+#slide-3 .bullets li {
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  color: #616161;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+#slide-3 .bullets li::before {
+  content: "�";
+  position: absolute;
+  left: 0;
+  color: #42a5f5;
+  font-weight: bold;
+}
+
+#slide-3 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #757575;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   SLIDE 4  INTRODUÇÃO: IMPORTÂNCIA CLÍNICA
+   ========================================================================== */
+
+#slide-4 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-4 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-4 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-4 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-4 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-4 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-4 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-4 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-4 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-4 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 5  OBJETIVOS E ABORDAGEM
+   ========================================================================== */
+
+#slide-5 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-5 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-5 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-5 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-5 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#slide-5 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-5 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-5 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-5 .image-placeholder {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background: #f5f5f5;
+  border: 2px dashed #bdbdbd;
+  border-radius: 6px;
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+#slide-5 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 6  DESAFIOS TRANSLACIONAIS
+   ========================================================================== */
+
+#slide-6 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-6 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-6 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-6 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-6 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-6 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-6 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-6 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-6 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-6 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 7  AXOLOTE & ZEBRAFISH
+   ========================================================================== */
+
+#slide-7 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-7 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-7 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-7 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-7 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-7 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-7 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-7 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-7 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-7 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 8  XENOPUS & AN�LISE COMPARATIVA
+   ========================================================================== */
+
+#slide-8 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-8 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-8 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-8 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-8 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-8 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-8 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-8 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-8 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-8 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 9  TABELA 1 (RESUMO HORMONAL)
+   ========================================================================== */
+
+#slide-9 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-9 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-9 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-9 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-9 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+#slide-9 .image-placeholder,
+#slide-9 .table-placeholder {
+  flex: 1;
+  padding: 2rem;
+  background: #f5f5f5;
+  border: 2px dashed #bdbdbd;
+  border-radius: 6px;
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slide-9 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-9 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-9 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-9 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 10  VEGF, RA, GH
+   ========================================================================== */
+
+#slide-10 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-10 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-10 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-10 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-10 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-10 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-10 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-10 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-10 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-10 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 11  HEMOSTASIA & INFLAMA��O
+   ========================================================================== */
+
+#slide-11 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-11 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-11 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-11 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-11 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#slide-11 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-11 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-11 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-11 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 12  EPIMORFISMO E BLASTEMA
+   ========================================================================== */
+
+#slide-12 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-12 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-12 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-12 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-12 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-12 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-12 .numbered {
+  list-style: none;
+  counter-reset: item;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-12 .numbered li {
+  counter-increment: item;
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 2rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-12 .numbered li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+#slide-12 .image-placeholder {
+  padding: 2rem;
+  background: #f5f5f5;
+  border: 2px dashed #bdbdbd;
+  border-radius: 6px;
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#slide-12 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 13  DESDIFERENCIA��O E REGULA��O MOLECULAR
+   ========================================================================== */
+
+#slide-13 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-13 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-13 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-13 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-13 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#slide-13 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-13 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-13 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-13 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 14  PROLIFERA��O & DIFERENCIA��O
+   ========================================================================== */
+
+#slide-14 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-14 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-14 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-14 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-14 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-14 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-14 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-14 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-14 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-14 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 15  REMODELA��O �SSEA (CICLO)
+   ========================================================================== */
+
+#slide-15 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-15 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-15 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-15 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-15 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#slide-15 .numbered {
+  list-style: none;
+  counter-reset: item;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-15 .numbered li {
+  counter-increment: item;
+  font-size: 1.15rem;
+  padding: 1rem 1rem 1rem 3rem;
+  margin-bottom: 1rem;
+  background: #f5f5f5;
+  border-radius: 6px;
+  position: relative;
+  line-height: 1.6;
+  color: #424242;
+}
+
+#slide-15 .numbered li::before {
+  content: counter(item);
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  background: #1976d2;
+  color: white;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#slide-15 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 16  FIGURA 2 / REMODELA��O HORMONAL
+   ========================================================================== */
+
+#slide-16 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-16 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-16 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-16 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-16 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-16 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-16 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-16 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-16 .image-placeholder {
+  padding: 2rem;
+  background: #f5f5f5;
+  border: 2px dashed #bdbdbd;
+  border-radius: 6px;
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#slide-16 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 17  PTH MECANISMOS
+   ========================================================================== */
+
+#slide-17 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-17 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-17 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-17 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-17 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#slide-17 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-17 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-17 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-17 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 18  PTH: PULS�TIL VS CONT�NUO
+   ========================================================================== */
+
+#slide-18 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-18 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-18 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-18 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-18 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#slide-18 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-18 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-18 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-18 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 19  CALCITONINA
+   ========================================================================== */
+
+#slide-19 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-19 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-19 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-19 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-19 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-19 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-19 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-19 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-19 .image-placeholder {
+  padding: 2rem;
+  background: #f5f5f5;
+  border: 2px dashed #bdbdbd;
+  border-radius: 6px;
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#slide-19 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 20  FGF23
+   ========================================================================== */
+
+#slide-20 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-20 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-20 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-20 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-20 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+#slide-20 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-20 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-20 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-20 .image-placeholder,
+#slide-20 .table-placeholder {
+  flex: 1;
+  padding: 2rem;
+  background: #f5f5f5;
+  border: 2px dashed #bdbdbd;
+  border-radius: 6px;
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slide-20 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 21  INTERA��ES FGF23
+   ========================================================================== */
+
+#slide-21 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-21 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-21 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-21 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-21 .slide__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#slide-21 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-21 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-21 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-21 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 22  INTEGRA��O TERAP�UTICA
+   ========================================================================== */
+
+#slide-22 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-22 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-22 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-22 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-22 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-22 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-22 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-22 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-22 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-22 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 23  IGF-1 & GH
+   ========================================================================== */
+
+#slide-23 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-23 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-23 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-23 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-23 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-23 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-23 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-23 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-23 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-23 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 24  RISCOS & BENEF�CIOS IGF/GH
+   ========================================================================== */
+
+#slide-24 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-24 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-24 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-24 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-24 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-24 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-24 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-24 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-24 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-24 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 25  INTERA��ES & PERSPECTIVAS FUTURAS
+   ========================================================================== */
+
+#slide-25 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-25 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-25 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-25 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-25 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-25 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-25 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-25 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-25 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-25 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   SLIDE 26  CONCLUS�ES & AGRADECIMENTOS
+   ========================================================================== */
+
+#slide-26 {
+  background: #eceff1;
+  padding: 2rem 3rem;
+}
+
+#slide-26 .slide__header {
+  margin-bottom: 1.5rem;
+}
+
+#slide-26 .slide__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1976d2;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1976d2;
+}
+
+#slide-26 .slide__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#slide-26 .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#slide-26 .col h3 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+#slide-26 .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-26 .bullets li {
+  font-size: 1.05rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #424242;
+  position: relative;
+  line-height: 1.6;
+}
+
+#slide-26 .bullets li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-size: 1.5rem;
+  line-height: 1.05rem;
+}
+
+#slide-26 .slide__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  color: #757575;
+  font-size: 0.9rem;
+}
